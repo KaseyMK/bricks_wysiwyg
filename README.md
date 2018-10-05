@@ -2,29 +2,29 @@
 
 Bricks, paragraphs, and modifiers allow enormously flexible page layouts that are easy for content providers to build. WYSIWYG paragraphs let authors make dynamic content areas interspersed with media in a structured-data format. The combination gives ultimate flexibility to content providers without ongoing developer maintenance.
 
-[Download the PowerPoint](https://github.com/KaseyMK/bricks-wysiwyg/blob/master/data/readme/bricks-wysiwyg.pptx)
+[Download the PowerPoint](https://github.com/KaseyMK/bricks_wysiwyg/blob/master/data/readme/bricks-wysiwyg.pptx)
 
 ## Screenshots
 
 ### A home page built with bricks
 
-![alt text](https://raw.githubusercontent.com/KaseyMK/bricks-wysiwyg/master/data/readme/page_home.jpg "A page showing a hero area at the top with a background parallax image; then a row with three columns, each showing an image, title, blurb, and link; then a row with two columns, one with a video and the other with large text")
+![alt text](https://raw.githubusercontent.com/KaseyMK/bricks_wysiwyg/master/data/readme/page_home.jpg "A page showing a hero area at the top with a background parallax image; then a row with three columns, each showing an image, title, blurb, and link; then a row with two columns, one with a video and the other with large text")
 ---
 ### The bricks edit screen showing nested paragraphs
 
-![alt text](https://raw.githubusercontent.com/KaseyMK/bricks-wysiwyg/master/data/readme/page_home_edit.png "The edit screen for the home page shows the image, video and text paragraph types nested under some layout paragraph types")
+![alt text](https://raw.githubusercontent.com/KaseyMK/bricks_wysiwyg/master/data/readme/page_home_edit.png "The edit screen for the home page shows the image, video and text paragraph types nested under some layout paragraph types")
 ---
 ### A simple page with bricks at the bottom
 
-![alt text](https://raw.githubusercontent.com/KaseyMK/bricks-wysiwyg/master/data/readme/page_bricks.jpg "A page showing some text followed by a row containing three columns; the row has a background image on it and the columns (with a 1:2:1 size ratio) contain an image, a video, and another image")
+![alt text](https://raw.githubusercontent.com/KaseyMK/bricks_wysiwyg/master/data/readme/page_bricks.jpg "A page showing some text followed by a row containing three columns; the row has a background image on it and the columns (with a 1:2:1 size ratio) contain an image, a video, and another image")
 ---
 ### A page with paragraphs embedded via CKEditor as well as bricks in a sidebar
 
-![alt text](https://raw.githubusercontent.com/KaseyMK/bricks-wysiwyg/master/data/readme/page_wysiwyg.jpg "A page with a content area and a sidebar; the page area has images floated within the text and a video box at the bottom; the sidebar shows a stack of images, text, and video")
+![alt text](https://raw.githubusercontent.com/KaseyMK/bricks_wysiwyg/master/data/readme/page_wysiwyg.jpg "A page with a content area and a sidebar; the page area has images floated within the text and a video box at the bottom; the sidebar shows a stack of images, text, and video")
 ---
 ### The edit screen showing paragraphs within the WYSIWYG editor
 
-![alt text](https://raw.githubusercontent.com/KaseyMK/bricks-wysiwyg/master/data/readme/page_wysiwyg_edit.png "The edit screen for this page shows image paragraph types floating within the WYSIWYG text editor as they do on the page")
+![alt text](https://raw.githubusercontent.com/KaseyMK/bricks_wysiwyg/master/data/readme/page_wysiwyg_edit.png "The edit screen for this page shows image paragraph types floating within the WYSIWYG text editor as they do on the page")
 ---
 ## Instructions
 
