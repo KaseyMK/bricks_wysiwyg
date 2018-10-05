@@ -2,7 +2,7 @@
 
 Bricks, paragraphs, and modifiers allow enormously flexible page layouts that are easy for content providers to build. WYSIWYG paragraphs let authors make dynamic content areas interspersed with media in a structured-data format. The combination gives ultimate flexibility to content providers without ongoing developer maintenance.
 
-[Download the PowerPoint](https://github.com/KaseyMK/bricks_wysiwyg/blob/master/data/readme/bricks-wysiwyg.pptx)
+[Download the PowerPoint](https://github.com/KaseyMK/bricks_wysiwyg/blob/master/data/readme/bricks-wysiwyg.pptx?raw=true)
 
 ## Screenshots
 
