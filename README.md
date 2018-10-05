@@ -36,7 +36,7 @@ In your sites directory, run
 git clone https://github.com/KaseyMK/bricks_wysiwyg.git
 ```
 
-Then `cd bricks_wysiwyg` and run `composer_install`
+Then `cd bricks_wysiwyg` and run `composer install`
 
 Install the site with PHP 7.1 and the MySQL database dump file at `data/bricks-wysiwyg.sql` or create a new database.
 
