@@ -4,5 +4,5 @@ dependencies: {  }
 id: image_effects_modifier
 label: 'Image effects'
 icon_uuid: null
-description: 'Modify the image effcts for the paragraphs nested below (does not affect background images).'
+description: 'Modify the image effects (does not affect background images).'
 behavior_plugins: {  }
