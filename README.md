@@ -28,35 +28,29 @@ Bricks, paragraphs, and modifiers allow enormously flexible page layouts that ar
 ---
 ## Instructions
 
-Based on the Composer template for Drupal projects: [![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)
+These instructions assume you have installed Composer and know how to set up a local Drupal environment.
 
-First you need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
-
-> Note: The instructions below refer to the [global composer installation](https://getcomposer.org/doc/00-intro.md#globally).
-You might need to replace `composer` with `php composer.phar` (or similar)
-for your setup.
-
-After that you can create the project:
+In your sites directory, run
 
 ```
-composer create-project drupal-composer/drupal-project:8.x-dev some-dir --stability dev --no-interaction
+git clone https://github.com/KaseyMK/bricks_wysiwyg.git
 ```
 
-When installing the given `composer.json` some tasks are taken care of:
+Then `cd bricks_wysiwyg` and run `composer_install`
 
-* Drupal will be installed in the `web`-directory.
-* Autoloader is implemented to use the generated composer autoloader in `vendor/autoload.php`,
-  instead of the one provided by Drupal (`web/vendor/autoload.php`).
-* Modules (packages of type `drupal-module`) will be placed in `web/modules/contrib/`
-* Theme (packages of type `drupal-theme`) will be placed in `web/themes/contrib/`
-* Profiles (packages of type `drupal-profile`) will be placed in `web/profiles/contrib/`
-* Creates default writable versions of `settings.php` and `services.yml`.
-* Creates `web/sites/default/files`-directory.
-* Latest version of drush is installed locally for use at `vendor/bin/drush`.
-* Latest version of DrupalConsole is installed locally for use at `vendor/bin/drupal`.
-* Creates environment variables based on your .env file. See [.env.example](.env.example).
+Install the site with the MySQL database dump file at `data/bricks-wysiwyg.sql` or create a new database.
 
-One at a time, enable:
+### Sample Database and Files
+
+A sample database with color terms and pages can be loaded from the `web` directory with:
+
+`drush sql-drop -y && drush sql-cli < data/bricks-wysiwyg.sql`
+
+Sample images are in `data/files`; move those to `web/sites/default/files` or upload your own.
+
+### With a Fresh Database
+
+If you don't use the sample database, enable the following modules one at a time:
 
 * `modifiers_bg_color`
 * `modifiers_bg_image_text`
@@ -65,22 +59,16 @@ One at a time, enable:
 * `modifiers_text_color`
 * `modifiers_text_size`
 
-(Enabling those all at once can cause order-of-operation errors that lead to the dreaded WSOD.)
+> Enabling those all at once can cause order-of-operation errors that lead to the dreaded WSOD.
 
 Run `drush cim` to import configuration files from sync.
+
+## Usage
 
 Add some colors to the color vocabulary: `/admin/structure/taxonomy/manage/modifiers_color/overview`
 OR replace all entity reference color fields with a field of type "Color" with the same machine name.
 
 The "Basic page" content type includes brick fields with layout options above and below the body field, and a bricks field without layout options for the sidebar. The WYSIWYG body field includes an "Add media" button which allows the insertion of image, video, or aside paragraph types (if you're not using the sample database and files, you may need to upload a new button graphic at `/admin/config/content/embed/button/manage/add_media`).
-
-### Sample Database and Files
-
-A sample database with color terms and pages can be loaded from the `web` directory with:
-
-`drush sql-drop -y && drush sql-cli < ../data/bricks-wysiwyg.sql`
-
-Sample images are in `data/files`; move those to `web/sites/default/files` or upload your own.
 
 ### Adding Paragraph Types
 
