@@ -1,20 +1,39 @@
-# Composer template for Drupal projects
+# Bricks &amp; WYSIWYG Paragraphs for Impressive Pages Without Ongoing Development
 
-[![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)
+Bricks, paragraphs, and modifiers allow enormously flexible page layouts that are easy for content providers to build. WYSIWYG paragraphs let authors make dynamic content areas interspersed with media in a structured-data format. The combination gives ultimate flexibility to content providers without ongoing developer maintenance.
 
-This project template provides a starter kit for managing your site
-dependencies with [Composer](https://getcomposer.org/).
+[Download the PowerPoint](https://github.com/KaseyMK/bricks-wysiwyg/blob/master/data/readme/bricks-wysiwyg.pptx)
 
-If you want to know how to use it as replacement for
-[Drush Make](https://github.com/drush-ops/drush/blob/8.x/docs/make.md) visit
-the [Documentation on drupal.org](https://www.drupal.org/node/2471553).
+## Screenshots
 
-## Usage
+### A home page built with bricks
+
+![alt text](https://raw.githubusercontent.com/KaseyMK/bricks-wysiwyg/master/data/readme/page_home.jpg "A page showing a hero area at the top with a background parallax image; then a row with three columns, each showing an image, title, blurb, and link; then a row with two columns, one with a video and the other with large text")
+---
+### The bricks edit screen showing nested paragraphs
+
+![alt text](https://raw.githubusercontent.com/KaseyMK/bricks-wysiwyg/master/data/readme/page_home_edit.png "The edit screen for the home page shows the image, video and text paragraph types nested under some layout paragraph types")
+---
+### A simple page with bricks at the bottom
+
+![alt text](https://raw.githubusercontent.com/KaseyMK/bricks-wysiwyg/master/data/readme/page_bricks.jpg "A page showing some text followed by a row containing three columns; the row has a background image on it and the columns (with a 1:2:1 size ratio) contain an image, a video, and another image")
+---
+### A page with paragraphs embedded via CKEditor as well as bricks in a sidebar
+
+![alt text](https://raw.githubusercontent.com/KaseyMK/bricks-wysiwyg/master/data/readme/page_wysiwyg.jpg "A page with a content area and a sidebar; the page area has images floated within the text and a video box at the bottom; the sidebar shows a stack of images, text, and video")
+---
+### The edit screen showing paragraphs within the WYSIWYG editor
+
+![alt text](https://raw.githubusercontent.com/KaseyMK/bricks-wysiwyg/master/data/readme/page_wysiwyg_edit.png "The edit screen for this page shows image paragraph types floating within the WYSIWYG text editor as they do on the page")
+---
+## Instructions
+
+Based on the Composer template for Drupal projects: [![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)
 
 First you need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
 
 > Note: The instructions below refer to the [global composer installation](https://getcomposer.org/doc/00-intro.md#globally).
-You might need to replace `composer` with `php composer.phar` (or similar) 
+You might need to replace `composer` with `php composer.phar` (or similar)
 for your setup.
 
 After that you can create the project:
@@ -22,20 +41,6 @@ After that you can create the project:
 ```
 composer create-project drupal-composer/drupal-project:8.x-dev some-dir --stability dev --no-interaction
 ```
-
-With `composer require ...` you can download new dependencies to your 
-installation.
-
-```
-cd some-dir
-composer require drupal/devel:~1.0
-```
-
-The `composer create-project` command passes ownership of all files to the 
-project that is created. You should create a new git repository, and commit 
-all files not excluded by the .gitignore file.
-
-## What does the template do?
 
 When installing the given `composer.json` some tasks are taken care of:
 
@@ -51,93 +56,100 @@ When installing the given `composer.json` some tasks are taken care of:
 * Latest version of DrupalConsole is installed locally for use at `vendor/bin/drupal`.
 * Creates environment variables based on your .env file. See [.env.example](.env.example).
 
-## Updating Drupal Core
+One at a time, enable:
 
-This project will attempt to keep all of your Drupal Core files up-to-date; the 
-project [drupal-composer/drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold) 
-is used to ensure that your scaffold files are updated every time drupal/core is 
-updated. If you customize any of the "scaffolding" files (commonly .htaccess), 
-you may need to merge conflicts if any of your modified files are updated in a 
-new release of Drupal core.
+* `modifiers_bg_color`
+* `modifiers_bg_image_text`
+* `modifiers_bg_parallax_text`
+* `modifiers_image_effects`
+* `modifiers_text_color`
+* `modifiers_text_size`
 
-Follow the steps below to update your core files.
+(Enabling those all at once can cause order-of-operation errors that lead to the dreaded WSOD.)
 
-1. Run `composer update drupal/core webflo/drupal-core-require-dev symfony/* --with-dependencies` to update Drupal Core and its dependencies.
-1. Run `git diff` to determine if any of the scaffolding files have changed. 
-   Review the files for any changes and restore any customizations to 
-  `.htaccess` or `robots.txt`.
-1. Commit everything all together in a single commit, so `web` will remain in
-   sync with the `core` when checking out branches or running `git bisect`.
-1. In the event that there are non-trivial conflicts in step 2, you may wish 
-   to perform these steps on a branch, and use `git merge` to combine the 
-   updated core files with your customized files. This facilitates the use 
-   of a [three-way merge tool such as kdiff3](http://www.gitshah.com/2010/12/how-to-setup-kdiff-as-diff-tool-for-git.html). This setup is not necessary if your changes are simple; 
-   keeping all of your modifications at the beginning or end of the file is a 
-   good strategy to keep merges easy.
+Run `drush cim` to import configuration files from sync.
 
-## Generate composer.json from existing project
+Add some colors to the color vocabulary: `/admin/structure/taxonomy/manage/modifiers_color/overview`
+OR replace all entity reference color fields with a field of type "Color" with the same machine name.
 
-With using [the "Composer Generate" drush extension](https://www.drupal.org/project/composer_generate)
-you can now generate a basic `composer.json` file from an existing project. Note
-that the generated `composer.json` might differ from this project's file.
+The "Basic page" content type includes brick fields with layout options above and below the body field, and a bricks field without layout options for the sidebar. The WYSIWYG body field includes an "Add media" button which allows the insertion of image, video, or aside paragraph types (if you're not using the sample database and files, you may need to upload a new button graphic at `/admin/config/content/embed/button/manage/add_media`).
 
+### Sample Database and Files
 
-## FAQ
+A sample database with color terms and pages can be loaded from the `web` directory with:
 
-### Should I commit the contrib modules I download?
+`drush sql-drop -y && drush sql-cli < ../data/bricks-wysiwyg.sql`
 
-Composer recommends **no**. They provide [argumentation against but also 
-workrounds if a project decides to do it anyway](https://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md).
+Sample images are in `data/files`; move those to `web/sites/default/files` or upload your own.
 
-### Should I commit the scaffolding files?
+### Adding Paragraph Types
 
-The [drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold) plugin can download the scaffold files (like
-index.php, update.php, …) to the web/ directory of your project. If you have not customized those files you could choose
-to not check them into your version control system (e.g. git). If that is the case for your project it might be
-convenient to automatically run the drupal-scaffold plugin after every install or update of your project. You can
-achieve that by registering `@composer drupal:scaffold` as post-install and post-update command in your composer.json:
+New paragraph types can be added at `/admin/structure/paragraphs_type`.
 
-```json
-"scripts": {
-    "post-install-cmd": [
-        "@composer drupal:scaffold",
-        "..."
-    ],
-    "post-update-cmd": [
-        "@composer drupal:scaffold",
-        "..."
-    ]
-},
-```
-### How can I apply patches to downloaded modules?
+Enable a new paragraph type in a bricks field by editing that field, e.g. at `/admin/structure/types/manage/page/fields/node.page.field_bricks_before`.
 
-If you need to apply patches (depending on the project being modified, a pull 
-request is often a better solution), you can do so with the 
-[composer-patches](https://github.com/cweagans/composer-patches) plugin.
+To enable a new paragraph type in the WYSIWYG, you must add it to both the entity embed button and to the entity browser.
 
-To add a patch to drupal module foobar insert the patches section in the extra 
-section of composer.json:
-```json
-"extra": {
-    "patches": {
-        "drupal/foobar": {
-            "Patch description": "URL or local path to patch"
-        }
-    }
-}
-```
-### How do I switch from packagist.drupal-composer.org to packages.drupal.org?
+Edit the `add_media` entity embed button at `/admin/config/content/embed/button/manage/add_media`.
 
-Follow the instructions in the [documentation on drupal.org](https://www.drupal.org/docs/develop/using-composer/using-packagesdrupalorg).
+Edit the `browse_paragraphs` entity browser at `/admin/config/content/entity_browser/browse_paragraphs`. Click "Next" until you get to the "Widgets" screen, and add an "Entity form" for the new paragraph type.
 
-### How do I specify a PHP version ?
+### Adding Modifiers
 
-Currently Drupal 8 supports PHP 5.5.9 as minimum version (see [Drupal 8 PHP requirements](https://www.drupal.org/docs/8/system-requirements/drupal-8-php-requirements)), however it's possible that a `composer update` will upgrade some package that will then require PHP 7+.
+New modifiers must be enabled in each appropriate `field_modifers` field, which are on each of the content and layout paragraph types.
 
-To prevent this you can add this code to specify the PHP version you want to use in the `config` section of `composer.json`:
-```json
-"config": {
-    "sort-packages": true,
-    "platform": {"php": "5.5.9"}
-},
-```
+## Modules
+
+The following contrib or non-standard core modules are enabled for the following reasons:
+
+* `admin_toolbar` `admin_toolbar_tools`: Dropdown admin menus are just so handy.
+* `allowed_formats`: To prevent embedded paragraphs within embedded paragraphs ad nauseam, only Restricted HTML is allowed within paragraph fields.
+* `bricks`: Provides a layout paragraph type and enables the nesting of paragraphs in a bricks field.
+* `bricks_inline`: Uses inline entity forms to provide bricks field widgets.
+* `bricks_revisions`: Allows revisions of bricks paragraphs to go with content revisions.
+* `color_field`: Provides a field type for color HEX values. Used on color taxonomy; could be used instead of entity reference fields on modifiers.
+* `ctools` `ctools_block`: Lets us place individual content fields into different theme regions on `/admin/structure/block`
+* `entity_browser` `entity_browser_entity_form`: We can create views to allow a user to select a pre-existing entity (like colors from a vocabulary: `/admin/structure/views/view/color_taxonomy`) and then build entity browsers that let users either select an existing entity or create a new one: `/admin/config/content/entity_browser`
+* `entity_embed`: Allows the creation of custom embed buttons for use in CKEditor, e.g. `/admin/config/content/embed` which uses the browse_paragraphs entity browser.
+* `field_group`: Lets us make nicer, less-confusing forms.
+* `inline_entity_form`: Allows complex field widgets which can be used to create other entities.
+* `layout_discovery`: Exposes layout files (in the theme folder) to discovery so they're available as selections on the layout paragraph type.
+* `linked_field`: Allows any field to be output as a link using any other link field or token. In this site, an image paragraph with a link field will have that link applied to the image.
+* `media_library`: An easy way to browse/upload images from a field on an entity. Not quite as good as it should be for video yet; video_embed_field could be used instead.
+* `modifiers`: When field_modifiers is added to any entity, enabled modifiers can be applied to that entity.
+* `modifiers_bg_color`: Adds a background color to the entity on which it is applied, and calculates the better contrast (between black or white) for text on that entity.
+* `modifiers_bg_image_text`: Adds a background image to the entity on which it is applied, and allows the choice of black or white text (with an opaque background of the opposite color to help legibility).
+* `modifiers_bg_parallax_text`: Adds a background parallax image to the entity on which it is applied, and allows the choice of black or white text (with an opaque background of the opposite color to help legibility).
+* `modifiers_image_effects`: Adds filters that will be applied to any img elements within the entity.
+* `modifiers_text_color`: Changes the text color in the entity on which it is applied, and calculates the better contrast (between black or white) for the background color on that entity.
+* `modifiers_text_size`: Changes the relative text size for the entity on which it is applied.
+* `paragraphs`: Fancy, flexible field collections.
+* `php_functions`: PHP functions that are called from several modifer modules to calculate color luminosity and contrast.
+* `responsive_image`: Don't deliver a larger image than necessary for your user's screen size.
+* `theme_functions`: A simple function to hide a confusing layout that comes with bricks.
+
+## Theme
+
+The [Bootstrap theme](https://www.drupal.org/project/bootstrap) lets us take advantage of preset classes like `col-xs-4` for our layout files (`web/themes/custom/bricks_wysiwyg/templates/layout`) but custom styles could be created instead.
+
+The Bricks-WYSIWYG subtheme is a place to put templates and CSS that help this demo site look nice and help demonstrate why using Paragraphs is cool (image paragraphs can easily be output with the &lt;figure&gt; and &lt;figcaption&gt; elements, for example), but all of those customizations could be applied to any other theme.
+
+## Libraries
+
+[Jarallax](https://github.com/nk-o/jarallax) is required by the Parallax background image modifier. Read the installation instructions in `web/modules/custom/modifiers/modifiers_bg_parallax_text/README.md` carefully.
+
+[Spectrum](http://bgrins.github.io/spectrum) is a color-selecting widget which is normally compatible with the color_field module. It doesn't currently work with the latest versions of Drupal and color_field, but it's included here because being able to choose from a preset selection of color values OR use a color wheel OR enter a hex value is pretty nice. Read the installation instructions in `web/modules/custom/modifiers/modifiers_bg_color/README.md` carefully.
+
+## Patches
+
+See `patches/composer.patches.json` for more information.
+
+If you don't find the custom patches for the entity_embed module (to add a width filter and use it to apply a view mode), you'll probably want to enable more view modes on the `add_media` entity embed button at `/admin/config/content/embed/button/manage/add_media` instead.
+
+## Notes
+
+The [Modifiers Pack module](https://www.drupal.org/project/modifiers_pack) includes a number of different modifiers upon which this site's modifiers are based. There shouldn't be any conflict in using modifiers from both collections, but pay attention to UI differences that might be confusing.
+
+The [Bootstrap Paragraphs module](https://www.drupal.org/project/bootstrap_paragraphs) includes paragraph types which let you easily create features like Accordions, Carousels, Modals, Tabs, and Multi-column layouts. You may need different versions of these paragraph types for use in the WYSIWYG or within your bricks fields, or choose to enable them in only one or the other.
+
+Drupal's Media module is not yet quite as robust for videos as it is for images (the videos don't size to fit their containers and there's no way to add providers yet). If you can't wait, [video_embed_field](https://www.drupal.org/project/video_embed_field) works well now.
