@@ -1,0 +1,24 @@
+uuid: acf3ee32-1fd0-48b7-96dc-8960aa22644c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.aside.field_caption
+    - field.field.paragraph.aside.field_modifiers
+    - paragraphs.paragraphs_type.aside
+  module:
+    - text
+id: paragraph.aside.default
+targetEntityType: paragraph
+bundle: aside
+mode: default
+content:
+  field_caption:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_modifiers: true

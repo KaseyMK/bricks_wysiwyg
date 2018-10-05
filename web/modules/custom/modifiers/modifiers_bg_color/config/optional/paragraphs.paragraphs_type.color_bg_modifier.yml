@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: color_bg_modifier
+label: 'Background color'
+icon_uuid: null
+description: 'Modify the background color for the paragraphs nested below. Text color and padding will be calculated automatically.'
+behavior_plugins: {  }

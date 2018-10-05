@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_size_modifier.field_mod_text_size
+    - field.field.paragraph.text_size_modifier.field_mod_screen_width
+    - paragraphs.paragraphs_type.text_size_modifier
+  module:
+    - entity_browser_entity_form
+    - field_group
+    - inline_entity_form
+third_party_settings:
+  field_group:
+    group_screen_width:
+      children:
+        - field_mod_screen_width
+      parent_name: ''
+      weight: 8
+      format_type: tab
+      format_settings:
+        label: 'Apply at screen width'
+        formatter: closed
+        description: 'If you need different versions of this modifier for different screen sizes, start with one that does not set a screen width. <a href="https://chrome.google.com/webstore/detail/browser-width/mlnegepkjlccabakompdmbcmdieaideh/related" target="_blank" title="This link to a chrome extension for setting/measuring browser width will open in a new window.">Make your browser window narrow (start at 320px wide)</a> and gradually make it wider. When it "breaks," take note of the width where that happened, and add a new version of this modifier with a width just under that. Repeat as needed. Modifiers with screen widths must be sorted from smallest to largest.'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Apply at screen width'
+id: paragraph.text_size_modifier.default
+targetEntityType: paragraph
+bundle: text_size_modifier
+mode: default
+content:
+  field_mod_text_size:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mod_screen_width:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

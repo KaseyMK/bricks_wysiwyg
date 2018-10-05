@@ -1,0 +1,33 @@
+uuid: a3f12b45-96ab-4e32-bb29-d39f12380603
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.max_1200x1200
+    - image.style.max_1536x1536
+    - image.style.max_1984x1984
+    - image.style.max_320x320
+    - image.style.max_576x576
+    - image.style.max_640x640
+    - image.style.max_768x768
+    - image.style.max_992x992
+id: 66vw
+label: 66vw
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width:20em) 66.66vw, 100vw'
+      sizes_image_styles:
+        - max_1200x1200
+        - max_1536x1536
+        - max_1984x1984
+        - max_320x320
+        - max_576x576
+        - max_640x640
+        - max_768x768
+        - max_992x992
+breakpoint_group: responsive_image
+fallback_image_style: max_320x320

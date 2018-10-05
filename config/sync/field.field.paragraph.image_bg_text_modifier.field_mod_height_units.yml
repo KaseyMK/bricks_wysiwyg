@@ -1,0 +1,21 @@
+uuid: b9a1f443-9386-40a3-983b-fc0bf4517293
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mod_height_units
+    - paragraphs.paragraphs_type.image_bg_text_modifier
+  module:
+    - options
+id: paragraph.image_bg_text_modifier.field_mod_height_units
+field_name: field_mod_height_units
+entity_type: paragraph
+bundle: image_bg_text_modifier
+label: 'Minimum height units'
+description: 'Specify the units for the height. Pixels (px) are absolute; em units (recommended) are relative, based on font size; percents (%) are relative, based on container height.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

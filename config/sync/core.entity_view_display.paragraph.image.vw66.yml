@@ -1,0 +1,66 @@
+uuid: 8d9120f0-9381-49cd-93d2-ec4b75ebb52c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.vw66
+    - field.field.paragraph.image.field_aaa_media_fake_field
+    - field.field.paragraph.image.field_caption
+    - field.field.paragraph.image.field_image
+    - field.field.paragraph.image.field_link
+    - field.field.paragraph.image.field_modifiers
+    - field.field.paragraph.image.field_title
+    - paragraphs.paragraphs_type.image
+  module:
+    - link
+    - linked_field
+    - text
+id: paragraph.image.vw66
+targetEntityType: paragraph
+bundle: image
+mode: vw66
+content:
+  field_caption:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: vw66
+      link: false
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_link
+        advanced: {  }
+    region: content
+  field_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_aaa_media_fake_field: true
+  field_modifiers: true

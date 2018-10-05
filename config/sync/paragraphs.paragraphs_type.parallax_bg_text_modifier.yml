@@ -1,0 +1,9 @@
+uuid: b9912acc-835a-4158-b7f2-8864b8abc105
+langcode: en
+status: true
+dependencies: {  }
+id: parallax_bg_text_modifier
+label: 'Background parallax image'
+icon_uuid: null
+description: 'Modify the background parallax image of a paragraph. Text color and padding will be calculated automatically.'
+behavior_plugins: {  }

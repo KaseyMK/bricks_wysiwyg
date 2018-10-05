@@ -1,0 +1,29 @@
+uuid: 9a486807-7a7d-4023-8b5c-5e626e4be6a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.aside
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.video
+  content:
+    - 'file:file:f5e74562-cd27-46ca-a872-103a976e61f9'
+  module:
+    - entity_embed
+    - paragraphs
+label: 'Add media'
+id: add_media
+type_id: entity
+type_settings:
+  entity_type: paragraph
+  bundles:
+    - aside
+    - image
+    - video
+  display_plugins:
+    - 'view_mode:paragraph.vw100'
+  entity_browser: browse_paragraphs
+  entity_browser_settings:
+    display_review: false
+  inline_entity_edit_enabled: 1
+icon_uuid: f5e74562-cd27-46ca-a872-103a976e61f9

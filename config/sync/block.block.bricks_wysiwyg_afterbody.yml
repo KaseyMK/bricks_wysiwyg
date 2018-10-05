@@ -1,0 +1,29 @@
+uuid: 7463cc60-cd37-43f5-93c9-0f57c173b1c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools_block
+  theme:
+    - bricks_wysiwyg
+id: bricks_wysiwyg_afterbody
+theme: bricks_wysiwyg
+region: content
+weight: 0
+provider: null
+plugin: 'entity_field:node:field_bricks_after'
+settings:
+  id: 'entity_field:node:field_bricks_after'
+  label: 'After body'
+  provider: ctools_block
+  label_display: '0'
+  formatter:
+    label: hidden
+    type: bricks_nested
+    settings:
+      view_mode: default
+    third_party_settings: {  }
+    weight: 0
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility: {  }

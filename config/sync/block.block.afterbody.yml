@@ -1,0 +1,29 @@
+uuid: b6a0d543-6727-4a48-815d-b8fb9fff0af1
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools_block
+  theme:
+    - bartik
+id: afterbody
+theme: bartik
+region: content
+weight: -1
+provider: null
+plugin: 'entity_field:node:field_bricks_after'
+settings:
+  id: 'entity_field:node:field_bricks_after'
+  label: 'After body'
+  provider: ctools_block
+  label_display: '0'
+  formatter:
+    label: hidden
+    type: bricks_nested
+    settings:
+      view_mode: default
+    third_party_settings: {  }
+    weight: 0
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility: {  }

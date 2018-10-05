@@ -1,0 +1,23 @@
+uuid: 83ccd7fc-dba5-4cd4-8c45-6acb8793f782
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mod_black_white
+    - paragraphs.paragraphs_type.image_bg_text_modifier
+  module:
+    - options
+id: paragraph.image_bg_text_modifier.field_mod_black_white
+field_name: field_mod_black_white
+entity_type: paragraph
+bundle: image_bg_text_modifier
+label: 'Text color'
+description: 'Set the color for text to be displayed over this background image.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 'rgba(255,255,255,1)'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

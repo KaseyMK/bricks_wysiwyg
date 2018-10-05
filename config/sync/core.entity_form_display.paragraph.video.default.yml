@@ -1,0 +1,79 @@
+uuid: 37f94391-5a34-4b35-ae37-fd1bd96851b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video.field_aaa_media_fake_field
+    - field.field.paragraph.video.field_caption
+    - field.field.paragraph.video.field_link
+    - field.field.paragraph.video.field_modifiers
+    - field.field.paragraph.video.field_title
+    - field.field.paragraph.video.field_video
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_browser_entity_form
+    - link
+    - media_library
+    - paragraphs
+    - text
+id: paragraph.video.default
+targetEntityType: paragraph
+bundle: video
+mode: default
+content:
+  field_caption:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_modifiers:
+    weight: 4
+    settings:
+      title: modifier
+      title_plural: modifiers
+      edit_mode: closed
+      closed_mode: preview
+      autocollapse: none
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_video:
+    weight: 0
+    settings: {  }
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: browse_videos_modal
+    type: media_library_widget
+    region: content
+hidden:
+  created: true
+  field_aaa_media_fake_field: true
+  moderation_state: true
+  status: true
+  uid: true

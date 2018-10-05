@@ -1,0 +1,20 @@
+uuid: ca3edbe7-069d-4149-95a6-cda93736dd61
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_mod_image_fx_h_sepia
+field_name: field_mod_image_fx_h_sepia
+entity_type: paragraph
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

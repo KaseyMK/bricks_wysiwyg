@@ -1,0 +1,126 @@
+uuid: c7d5431d-1a53-44e3-9e7a-b61e09f30c2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_blur
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_brightness
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_contrast
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_h_blur
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_h_brightness
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_h_contrast
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_h_hue_rotate
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_h_invert
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_h_opacity
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_h_rotate
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_h_saturate
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_h_scale
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_h_sepia
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_hue_rotate
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_invert
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_opacity
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_rotate
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_saturate
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_scale
+    - field.field.paragraph.image_effects_modifier.field_mod_image_fx_sepia
+    - field.field.paragraph.image_effects_modifier.field_mod_screen_width
+    - field.field.paragraph.image_effects_modifier.field_mod_transition_duration
+    - paragraphs.paragraphs_type.image_effects_modifier
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_note:
+      children:
+        - field_mod_image_fx_brightness
+        - field_mod_image_fx_contrast
+        - field_mod_image_fx_invert
+        - field_mod_image_fx_saturate
+        - field_mod_image_fx_opacity
+        - field_mod_image_fx_rotate
+        - field_mod_image_fx_scale
+      parent_name: ''
+      weight: 0
+      format_type: tab
+      format_settings:
+        label: Note
+        formatter: open
+        description: '<p><em>Not all effects can be applied to the same image; if you run into problems, try reducing or removing an effect. Be sure your effects do not impact usability; for instance, if you rotate an image, you might need to also reduce its scale so that it doesn''t cover up text on the page. Effects will not be applied to background images.</em></p>'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Note
+id: paragraph.image_effects_modifier.default
+targetEntityType: paragraph
+bundle: image_effects_modifier
+mode: default
+content:
+  field_mod_image_fx_brightness:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mod_image_fx_contrast:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mod_image_fx_invert:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mod_image_fx_opacity:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mod_image_fx_rotate:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mod_image_fx_saturate:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mod_image_fx_scale:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  created: true
+  field_mod_image_fx_blur: true
+  field_mod_image_fx_h_blur: true
+  field_mod_image_fx_h_brightness: true
+  field_mod_image_fx_h_contrast: true
+  field_mod_image_fx_h_hue_rotate: true
+  field_mod_image_fx_h_invert: true
+  field_mod_image_fx_h_opacity: true
+  field_mod_image_fx_h_rotate: true
+  field_mod_image_fx_h_saturate: true
+  field_mod_image_fx_h_scale: true
+  field_mod_image_fx_h_sepia: true
+  field_mod_image_fx_hue_rotate: true
+  field_mod_image_fx_sepia: true
+  field_mod_screen_width: true
+  field_mod_transition_duration: true
+  moderation_state: true
+  status: true
+  uid: true

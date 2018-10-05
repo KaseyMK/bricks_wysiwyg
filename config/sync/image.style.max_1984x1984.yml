@@ -1,0 +1,15 @@
+uuid: 1361dd14-b7d8-4032-a221-c4ea49ad8cd2
+langcode: en
+status: true
+dependencies: {  }
+name: max_1984x1984
+label: 'Max 1984x1984 (large 2x)'
+effects:
+  963ca61b-048d-43a6-bbc2-a97577ad11fd:
+    uuid: 963ca61b-048d-43a6-bbc2-a97577ad11fd
+    id: image_scale
+    weight: 1
+    data:
+      width: 1984
+      height: 1984
+      upscale: false

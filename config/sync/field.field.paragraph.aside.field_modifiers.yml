@@ -1,0 +1,69 @@
+uuid: 85415fc4-b72b-4fdc-9d78-0809160f1eb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_modifiers
+    - paragraphs.paragraphs_type.aside
+    - paragraphs.paragraphs_type.color_bg_modifier
+    - paragraphs.paragraphs_type.color_text_modifier
+    - paragraphs.paragraphs_type.image_bg_text_modifier
+    - paragraphs.paragraphs_type.parallax_bg_text_modifier
+    - paragraphs.paragraphs_type.text_size_modifier
+  module:
+    - bricks_revisions
+id: paragraph.aside.field_modifiers
+field_name: field_modifiers
+entity_type: paragraph
+bundle: aside
+label: Modifiers
+description: 'Some modifier combinations will conflict; choose only <em>one</em> from text color and background options.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: '0'
+    target_bundles:
+      color_bg_modifier: color_bg_modifier
+      image_bg_text_modifier: image_bg_text_modifier
+      parallax_bg_text_modifier: parallax_bg_text_modifier
+      color_text_modifier: color_text_modifier
+      text_size_modifier: text_size_modifier
+    target_bundles_drag_drop:
+      color_bg_modifier:
+        enabled: '1'
+        weight: '-23'
+      image_bg_text_modifier:
+        enabled: '1'
+        weight: '-22'
+      parallax_bg_text_modifier:
+        enabled: '1'
+        weight: '-21'
+      color_text_modifier:
+        enabled: '1'
+        weight: '-20'
+      text_size_modifier:
+        enabled: '1'
+        weight: '-19'
+      aside:
+        weight: '-18'
+        enabled: 0
+      image:
+        weight: '-17'
+        enabled: 0
+      image_effects_modifier:
+        weight: '-16'
+        enabled: 0
+      layout:
+        weight: '-15'
+        enabled: 0
+      text:
+        weight: '-14'
+        enabled: 0
+      video:
+        weight: '-13'
+        enabled: 0
+field_type: bricks_revisioned

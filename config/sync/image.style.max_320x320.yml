@@ -1,0 +1,15 @@
+uuid: 00e5aca3-42ef-47e5-b15a-ad2e4873f8b6
+langcode: en
+status: true
+dependencies: {  }
+name: max_320x320
+label: 'Max 320x320 (extra small 1x)'
+effects:
+  5d0982e7-7387-4d0a-939e-dcdef42169e6:
+    uuid: 5d0982e7-7387-4d0a-939e-dcdef42169e6
+    id: image_scale
+    weight: 1
+    data:
+      width: 320
+      height: 320
+      upscale: false

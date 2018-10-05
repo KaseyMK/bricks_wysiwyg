@@ -1,0 +1,23 @@
+uuid: 175f65bf-b6a3-4f8a-9481-2c58c6cf3b90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mod_horizontal_align
+    - paragraphs.paragraphs_type.parallax_bg_text_modifier
+  module:
+    - options
+id: paragraph.parallax_bg_text_modifier.field_mod_horizontal_align
+field_name: field_mod_horizontal_align
+entity_type: paragraph
+bundle: parallax_bg_text_modifier
+label: 'Horizontal alignment'
+description: 'Horizontally align the text overlay in relation to the background image.'
+required: false
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

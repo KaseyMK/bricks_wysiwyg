@@ -1,0 +1,9 @@
+uuid: e4aed5e9-b549-42aa-acee-3c16a8043dd6
+langcode: en
+status: true
+dependencies: {  }
+id: layout
+label: Layout
+icon_uuid: null
+description: 'Select a layout for the paragraphs nested below.'
+behavior_plugins: {  }

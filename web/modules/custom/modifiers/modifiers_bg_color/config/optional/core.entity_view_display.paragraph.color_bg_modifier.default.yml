@@ -1,0 +1,51 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.color_bg_modifier.field_mod_background_color
+    - field.field.paragraph.color_bg_modifier.field_mod_h_background_color
+    - field.field.paragraph.color_bg_modifier.field_mod_screen_width
+    - field.field.paragraph.color_bg_modifier.field_mod_transition_duration
+    - paragraphs.paragraphs_type.color_bg_modifier
+id: paragraph.color_bg_modifier.default
+targetEntityType: paragraph
+bundle: color_bg_modifier
+mode: default
+content:
+  field_mod_background_color:
+    weight: 1
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mod_h_background_color:
+    weight: 4
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mod_screen_width:
+    weight: 8
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_mod_transition_duration:
+    weight: 7
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+hidden:
+  created: true
+  uid: true

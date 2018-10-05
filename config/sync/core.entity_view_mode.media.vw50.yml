@@ -1,0 +1,10 @@
+uuid: ab3fc4aa-96d9-4cc1-a6be-4da287217977
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.vw50
+label: 50vw
+targetEntityType: media
+cache: true

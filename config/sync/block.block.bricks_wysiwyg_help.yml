@@ -1,0 +1,22 @@
+uuid: 8a9f154e-d452-450e-917b-8896a78fdb3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - bricks_wysiwyg
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: bricks_wysiwyg_help
+theme: bricks_wysiwyg
+region: header
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

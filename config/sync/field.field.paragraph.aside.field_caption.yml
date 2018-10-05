@@ -1,0 +1,28 @@
+uuid: 8866d7b7-e30e-4f2a-8356-ff934a220877
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_caption
+    - paragraphs.paragraphs_type.aside
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    restricted_html: restricted_html
+    basic_html: '0'
+    full_html: '0'
+    plain_text: '0'
+id: paragraph.aside.field_caption
+field_name: field_caption
+entity_type: paragraph
+bundle: aside
+label: Aside
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

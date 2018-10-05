@@ -1,0 +1,36 @@
+uuid: 66371bd7-0709-4ece-bfa8-aebe8ce15f4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.body
+    - field.field.node.page.field_bricks_after
+    - field.field.node.page.field_bricks_before
+    - field.field.node.page.field_bricks_hero
+    - field.field.node.page.field_bricks_sidebar
+    - node.type.page
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: cSv5lDnbIgDug475Hdz3woED2XMqYv3awI-J9u1JLbY
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    region: content
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+hidden:
+  field_bricks_after: true
+  field_bricks_before: true
+  field_bricks_hero: true
+  field_bricks_sidebar: true
+  links: true

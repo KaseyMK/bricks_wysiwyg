@@ -1,0 +1,23 @@
+uuid: 0e24a9cc-f7a7-4579-b7c6-50fd3e4e96a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mod_image_fx_opacity
+    - paragraphs.paragraphs_type.image_effects_modifier
+id: paragraph.image_effects_modifier.field_mod_image_fx_opacity
+field_name: field_mod_image_fx_opacity
+entity_type: paragraph
+bundle: image_effects_modifier
+label: Opacity
+description: 'Define the amount of opacity effect: 0 (transparent) - 100 (unchanged).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

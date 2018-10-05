@@ -1,0 +1,144 @@
+layout_onecol_all:
+  label: 'One column (many children)'
+  template: layout--onecol-all
+  category: 'Columns: 1'
+  default_region: first
+  icon_map:
+    - [first]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth
+    fifth:
+      label: Fifth
+    sixth:
+      label: Sixth
+    seventh:
+      label: Seventh
+    eighth:
+      label: Eighth
+    ninth:
+      label: Ninth
+    tenth:
+      label: Tenth
+    eleventh:
+      label: Eleventh
+    twelfth:
+      label: Twelfth
+
+layout_twocol:
+  label: 'Two equal columns'
+  template: layout--twocol
+  category: 'Columns: 2'
+  default_region: first
+  icon_map:
+    - [first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+layout_twocol_1_2:
+  label: 'Two columns 1:2'
+  template: layout--twocol-1-2
+  category: 'Columns: 2'
+  default_region: second
+  icon_map:
+    - [first, second, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+layout_twocol_1_3:
+  label: 'Two columns 1:3'
+  template: layout--twocol-1-3
+  category: 'Columns: 2'
+  default_region: second
+  icon_map:
+    - [first, second, second, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+layout_twocol_2_1:
+  label: 'Two columns 2:1'
+  template: layout--twocol-2-1
+  category: 'Columns: 2'
+  default_region: first
+  icon_map:
+    - [first, first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+layout_twocol_3_1:
+  label: 'Two columns 3:1'
+  template: layout--twocol-3-1
+  category: 'Columns: 2'
+  default_region: first
+  icon_map:
+    - [first, first, first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+layout_threecol_25_50_25:
+  label: 'Three columns 1:2:1'
+  template: layout--threecol-1-2-1
+  category: 'Columns: 3'
+  default_region: second
+  icon_map:
+    - [first, second, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+
+layout_threecol_33_34_33:
+  label: 'Three equal columns'
+  template: layout--threecol
+  category: 'Columns: 3'
+  default_region: first
+  icon_map:
+    - [first, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+
+layout_fourcol:
+  label: 'Four equal columns'
+  template: layout--fourcol
+  category: 'Columns: 4'
+  default_region: first
+  icon_map:
+    - [first, second, third, fourth]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth

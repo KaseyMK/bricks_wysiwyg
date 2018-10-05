@@ -1,0 +1,9 @@
+uuid: f2891f6f-09b1-40d6-a8aa-ddbb3c25965b
+langcode: en
+status: true
+dependencies: {  }
+id: image_effects_modifier
+label: 'Image effects'
+icon_uuid: null
+description: 'Modify the image effcts for a paragrapgh (does not affect background images).'
+behavior_plugins: {  }

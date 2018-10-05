@@ -1,0 +1,29 @@
+uuid: 013c1977-fc4b-44de-a4df-8ed1f9dbc45e
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools_block
+  theme:
+    - bartik
+id: sidebar
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'entity_field:node:field_bricks_sidebar'
+settings:
+  id: 'entity_field:node:field_bricks_sidebar'
+  label: Sidebar
+  provider: ctools_block
+  label_display: '0'
+  formatter:
+    label: hidden
+    type: bricks_nested
+    settings:
+      view_mode: sidebar
+    third_party_settings: {  }
+    weight: 0
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility: {  }

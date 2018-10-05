@@ -1,0 +1,10 @@
+name: Image Effects Modifier
+type: module
+description: Provides a Modifier to set the image effects on an element.
+# core: 8.x
+package: Modifiers
+dependencies:
+  - modifiers:modifiers
+  - paragraphs:paragraphs
+version: '1.0'
+core: '8.x'

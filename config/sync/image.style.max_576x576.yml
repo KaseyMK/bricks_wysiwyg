@@ -1,0 +1,15 @@
+uuid: aa0b9f8d-4f87-443f-b2a6-a0833e3219c2
+langcode: en
+status: true
+dependencies: {  }
+name: max_576x576
+label: 'Max 576x576 (small 1x)'
+effects:
+  eba9daff-909a-452b-81ce-b486896cb7dc:
+    uuid: eba9daff-909a-452b-81ce-b486896cb7dc
+    id: image_scale
+    weight: 1
+    data:
+      width: 576
+      height: 576
+      upscale: false

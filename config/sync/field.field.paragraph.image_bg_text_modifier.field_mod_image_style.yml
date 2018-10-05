@@ -1,0 +1,23 @@
+uuid: 17821f70-8887-4064-a797-1fd2ba62b8dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mod_image_style
+    - paragraphs.paragraphs_type.image_bg_text_modifier
+  module:
+    - options
+id: paragraph.image_bg_text_modifier.field_mod_image_style
+field_name: field_mod_image_style
+entity_type: paragraph
+bundle: image_bg_text_modifier
+label: 'Image style'
+description: 'Select the background image appearance.'
+required: false
+translatable: false
+default_value:
+  -
+    value: stretch
+default_value_callback: ''
+settings: {  }
+field_type: list_string

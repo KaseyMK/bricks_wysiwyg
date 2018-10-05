@@ -1,0 +1,65 @@
+uuid: 3fdf2753-f048-4c80-9953-d263b03c2c7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bricks_sidebar
+    - node.type.page
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.video
+  module:
+    - bricks_revisions
+id: node.page.field_bricks_sidebar
+field_name: field_bricks_sidebar
+entity_type: node
+bundle: page
+label: Sidebar
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: '0'
+    target_bundles:
+      image: image
+      video: video
+      text: text
+    target_bundles_drag_drop:
+      image:
+        enabled: '1'
+        weight: '-23'
+      video:
+        enabled: '1'
+        weight: '-22'
+      text:
+        enabled: '1'
+        weight: '-21'
+      color_bg_modifier:
+        weight: '-20'
+        enabled: 0
+      aside:
+        weight: '-19'
+        enabled: 0
+      color_text_modifier:
+        weight: '-18'
+        enabled: 0
+      image_bg_text_modifier:
+        weight: '-17'
+        enabled: 0
+      image_effects_modifier:
+        weight: '-16'
+        enabled: 0
+      layout:
+        weight: '-15'
+        enabled: 0
+      parallax_bg_text_modifier:
+        weight: '-14'
+        enabled: 0
+      text_size_modifier:
+        weight: '-13'
+        enabled: 0
+field_type: bricks_revisioned

@@ -1,0 +1,9 @@
+uuid: a28e4111-5403-48d2-808b-06c3b15d7ae0
+langcode: en
+status: true
+dependencies: {  }
+id: text
+label: Text
+icon_uuid: null
+description: 'Add some text. Unrestricted HTML allowed for administrative users.'
+behavior_plugins: {  }

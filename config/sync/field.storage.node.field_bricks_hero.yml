@@ -1,0 +1,21 @@
+uuid: 8494babe-f6ca-43ca-a53a-9d098c84fc82
+langcode: en
+status: true
+dependencies:
+  module:
+    - bricks_revisions
+    - node
+    - paragraphs
+id: node.field_bricks_hero
+field_name: field_bricks_hero
+entity_type: node
+type: bricks_revisioned
+settings:
+  target_type: paragraph
+module: bricks_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

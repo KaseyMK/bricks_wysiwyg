@@ -1,0 +1,12 @@
+name: Background Color Modifier
+type: module
+description: Provides a Modifier to set the background color and calculate the text color and padding on an element.
+# core: 8.x
+package: Modifiers
+dependencies:
+  - modifiers:modifiers
+  - paragraphs:paragraphs
+  - drupal:taxonomy
+  - color_field:color_field
+version: '1.0'
+core: '8.x'

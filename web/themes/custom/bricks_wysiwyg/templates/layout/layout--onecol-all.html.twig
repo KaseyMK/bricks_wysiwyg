@@ -1,0 +1,100 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a one-column layout.
+ *
+ * Bootstrap classes provide one column showing all children.
+ * https://getbootstrap.com/docs/4.0/layout/grid/
+ * The default Drupal container conflicts with that layout; only one child shows.
+ * This layout allows all children (well, up to 12) to show.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'layout',
+    'layout--onecol',
+  ]
+%}
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+
+    {% if content.first %}
+      <div {{ region_attributes.first.addClass('layout__region', 'layout__region--content') }}>
+        {{ content.first }}
+      </div>
+    {% endif %}
+
+    {% if content.second %}
+      <div {{ region_attributes.second.addClass('layout__region', 'layout__region--content') }}>
+        {{ content.second }}
+      </div>
+    {% endif %}
+
+    {% if content.third %}
+      <div {{ region_attributes.third.addClass('layout__region', 'layout__region--content') }}>
+        {{ content.third }}
+      </div>
+    {% endif %}
+
+    {% if content.fourth %}
+      <div {{ region_attributes.fourth.addClass('layout__region', 'layout__region--content') }}>
+        {{ content.fourth }}
+      </div>
+    {% endif %}
+
+    {% if content.fifth %}
+      <div {{ region_attributes.fifth.addClass('layout__region', 'layout__region--content') }}>
+        {{ content.fifth }}
+      </div>
+    {% endif %}
+
+    {% if content.sixth %}
+      <div {{ region_attributes.sixth.addClass('layout__region', 'layout__region--content') }}>
+        {{ content.sixth }}
+      </div>
+    {% endif %}
+
+    {% if content.seventh %}
+      <div {{ region_attributes.seventh.addClass('layout__region', 'layout__region--content') }}>
+        {{ content.seventh }}
+      </div>
+    {% endif %}
+
+    {% if content.eighth %}
+      <div {{ region_attributes.eighth.addClass('layout__region', 'layout__region--content') }}>
+        {{ content.eighth }}
+      </div>
+    {% endif %}
+
+    {% if content.ninth %}
+      <div {{ region_attributes.ninth.addClass('layout__region', 'layout__region--content') }}>
+        {{ content.ninth }}
+      </div>
+    {% endif %}
+
+    {% if content.tenth %}
+      <div {{ region_attributes.tenth.addClass('layout__region', 'layout__region--content') }}>
+        {{ content.tenth }}
+      </div>
+    {% endif %}
+
+    {% if content.eleventh %}
+      <div {{ region_attributes.eleventh.addClass('layout__region', 'layout__region--content') }}>
+        {{ content.eleventh }}
+      </div>
+    {% endif %}
+
+    {% if content.twelfth %}
+      <div {{ region_attributes.twelfth.addClass('layout__region', 'layout__region--content') }}>
+        {{ content.twelfth }}
+      </div>
+    {% endif %}
+
+  </div>
+{% endif %}

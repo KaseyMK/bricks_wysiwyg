@@ -1,0 +1,22 @@
+uuid: 88d54afe-4aa0-4be3-adfe-da0788e36a1d
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bricks_wysiwyg
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: bricks_wysiwyg_powered
+theme: bricks_wysiwyg
+region: navigation
+weight: -4
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

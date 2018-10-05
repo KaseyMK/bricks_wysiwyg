@@ -1,0 +1,27 @@
+uuid: 75a2310c-5d65-4fb8-b02a-c2dbcc060b14
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_mod_black_white
+field_name: field_mod_black_white
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'rgba(0,0,0,1)'
+      label: Black
+    -
+      value: 'rgba(255,255,255,1)'
+      label: White
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

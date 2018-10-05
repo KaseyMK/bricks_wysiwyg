@@ -1,0 +1,23 @@
+uuid: e7f69bb7-4507-4a88-a1db-799e6efed473
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - bricks_wysiwyg
+id: bricks_wysiwyg_entityviewcontent
+theme: bricks_wysiwyg
+region: content
+weight: -1
+provider: null
+plugin: 'entity_view:node'
+settings:
+  id: 'entity_view:node'
+  label: 'Entity view (Content)'
+  provider: ctools
+  label_display: '0'
+  view_mode: body
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility: {  }

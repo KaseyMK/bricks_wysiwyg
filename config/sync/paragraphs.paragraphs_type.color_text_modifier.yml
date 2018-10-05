@@ -1,0 +1,9 @@
+uuid: a501cf98-5c16-4354-9f4e-d852cfc8ed66
+langcode: en
+status: true
+dependencies: {  }
+id: color_text_modifier
+label: 'Text color'
+icon_uuid: null
+description: 'Modify the text color for a paragraph. Background color and padding will be calculated automatically.'
+behavior_plugins: {  }

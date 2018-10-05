@@ -1,0 +1,15 @@
+uuid: d3e2d16c-478f-4b33-ba28-8c268d979cc1
+langcode: en
+status: true
+dependencies: {  }
+name: max_992x992
+label: 'Max 992x992 (large 1x)'
+effects:
+  23c7b724-c9a7-4f2a-8122-afebed3a2fb3:
+    uuid: 23c7b724-c9a7-4f2a-8122-afebed3a2fb3
+    id: image_scale
+    weight: 1
+    data:
+      width: 992
+      height: 992
+      upscale: false

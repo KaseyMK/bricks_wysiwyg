@@ -1,0 +1,25 @@
+uuid: 179176ab-8303-4683-ace0-7808faeab94e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.layout.field_modifiers
+    - paragraphs.paragraphs_type.layout
+  module:
+    - bricks
+id: paragraph.layout.preview
+targetEntityType: paragraph
+bundle: layout
+mode: preview
+content:
+  field_modifiers:
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: bricks_nested
+    region: content
+hidden: {  }

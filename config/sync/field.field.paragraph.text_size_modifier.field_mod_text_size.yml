@@ -1,0 +1,23 @@
+uuid: 5959c84b-3f63-47d3-ab23-fee7485e429a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mod_text_size
+    - paragraphs.paragraphs_type.text_size_modifier
+  module:
+    - options
+id: paragraph.text_size_modifier.field_mod_text_size
+field_name: field_mod_text_size
+entity_type: paragraph
+bundle: text_size_modifier
+label: 'Text size'
+description: 'Select a font size for normal text (headers will scale accordingly). Smaller text is not recommended with colored text or backgrounds; the contrast may not be sufficient for accessibility.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 1rem
+default_value_callback: ''
+settings: {  }
+field_type: list_string

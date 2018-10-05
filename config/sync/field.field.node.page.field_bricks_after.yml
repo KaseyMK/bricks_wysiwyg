@@ -1,0 +1,67 @@
+uuid: a1bcdc0d-db3f-436c-8ada-3aaa5982cb5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bricks_after
+    - node.type.page
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.layout
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.video
+  module:
+    - bricks_revisions
+id: node.page.field_bricks_after
+field_name: field_bricks_after
+entity_type: node
+bundle: page
+label: 'After body'
+description: 'Layout boxes must be created <em>and</em> have a sibling box before the layout selection dropdown will appear. Then other boxes can be dragged to nest within layouts.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: '0'
+    target_bundles:
+      image: image
+      video: video
+      text: text
+      layout: layout
+    target_bundles_drag_drop:
+      image:
+        enabled: '1'
+        weight: '-23'
+      video:
+        enabled: '1'
+        weight: '-22'
+      text:
+        enabled: '1'
+        weight: '-21'
+      layout:
+        enabled: '1'
+        weight: '-20'
+      color_bg_modifier:
+        weight: '-19'
+        enabled: 0
+      aside:
+        weight: '-18'
+        enabled: 0
+      color_text_modifier:
+        weight: '-17'
+        enabled: 0
+      image_bg_text_modifier:
+        weight: '-16'
+        enabled: 0
+      image_effects_modifier:
+        weight: '-15'
+        enabled: 0
+      parallax_bg_text_modifier:
+        weight: '-14'
+        enabled: 0
+      text_size_modifier:
+        weight: '-13'
+        enabled: 0
+field_type: bricks_revisioned

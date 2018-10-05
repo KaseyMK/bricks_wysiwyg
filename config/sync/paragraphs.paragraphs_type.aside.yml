@@ -1,0 +1,9 @@
+uuid: d24b7296-1a96-4e0b-864f-989ffa87a58f
+langcode: en
+status: true
+dependencies: {  }
+id: aside
+label: Aside
+icon_uuid: null
+description: 'Add a pull quote or aside.'
+behavior_plugins: {  }

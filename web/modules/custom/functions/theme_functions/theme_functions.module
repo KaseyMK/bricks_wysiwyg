@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Module file for theme_functions.
+ */
+
+/**
+ * Implements hook_layout_alter().
+ */
+function theme_functions_layout_alter(&$definitions) {
+  // Disable a default layout we're not using.
+  unset($definitions['layout_twocol_bricks']);
+}

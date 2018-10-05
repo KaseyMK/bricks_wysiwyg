@@ -1,0 +1,37 @@
+uuid: 35280f62-42a2-469e-84b3-2b00259d7dcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.max_1200x1200
+    - image.style.max_1536x1536
+    - image.style.max_1984x1984
+    - image.style.max_2400x2400
+    - image.style.max_2880x2880
+    - image.style.max_320x320
+    - image.style.max_576x576
+    - image.style.max_640x640
+    - image.style.max_768x768
+    - image.style.max_992x992
+id: 100vw
+label: 100vw
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - max_1200x1200
+        - max_1536x1536
+        - max_1984x1984
+        - max_2400x2400
+        - max_2880x2880
+        - max_320x320
+        - max_576x576
+        - max_640x640
+        - max_768x768
+        - max_992x992
+breakpoint_group: responsive_image
+fallback_image_style: max_320x320

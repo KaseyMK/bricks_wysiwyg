@@ -1,0 +1,142 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_height
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_height_units
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_black_white
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_horizontal_align
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_parallax
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_parallax_speed
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_screen_width
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_text_width
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_vertical_align
+    - paragraphs.paragraphs_type.parallax_bg_text_modifier
+  module:
+    - entity_browser_entity_form
+    - field_group
+    - inline_entity_form
+third_party_settings:
+  field_group:
+    group_minimum_height:
+      children:
+        - field_mod_height
+        - field_mod_height_units
+        - field_mod_vertical_align
+      parent_name: ''
+      weight: 7
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: 'Set a minimum height to show more of the background image.'
+        required_fields: true
+      label: 'Minimum height'
+    group_screen_width:
+      children:
+        - field_mod_screen_width
+      parent_name: ''
+      weight: 8
+      format_type: tab
+      format_settings:
+        label: 'Apply at screen width'
+        formatter: closed
+        description: 'If you need different versions of this modifier for different screen sizes, start with one that does not set a screen width. <a href="https://chrome.google.com/webstore/detail/browser-width/mlnegepkjlccabakompdmbcmdieaideh/related" target="_blank" title="This link to a chrome extension for setting/measuring browser width will open in a new window.">Make your browser window narrow (start at 320px wide)</a> and gradually make it wider. When it "breaks," take note of the width where that happened, and add a new version of this modifier with a width just under that. Repeat as needed. Modifiers with screen widths must be sorted from smallest to largest.'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Apply at screen width'
+    group_text_overlay_options:
+      children:
+        - field_mod_black_white
+        - field_mod_text_width
+        - field_mod_horizontal_align
+      parent_name: ''
+      weight: 6
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Text overlay options'
+id: paragraph.parallax_bg_text_modifier.default
+targetEntityType: paragraph
+bundle: parallax_bg_text_modifier
+mode: default
+content:
+  field_mod_black_white:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mod_height:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mod_height_units:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mod_horizontal_align:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mod_parallax:
+    weight: 0
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: image
+      label_plural: images
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: browse_images_modal
+    type: inline_entity_form_complex
+    region: content
+  field_mod_parallax_speed:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_mod_screen_width:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mod_text_width:
+    type: number
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_mod_vertical_align:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

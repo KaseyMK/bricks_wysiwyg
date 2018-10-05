@@ -1,0 +1,23 @@
+uuid: 3637c14c-a2f7-4a2b-b96c-43248eaca245
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mod_height
+    - paragraphs.paragraphs_type.image_bg_text_modifier
+id: paragraph.image_bg_text_modifier.field_mod_height
+field_name: field_mod_height
+entity_type: paragraph
+bundle: image_bg_text_modifier
+label: 'Minimum height'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

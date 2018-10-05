@@ -1,0 +1,15 @@
+uuid: 81371e82-1fd0-44d3-8462-3a4ebd2083ef
+langcode: en
+status: true
+dependencies: {  }
+name: max_1536x1536
+label: 'Max 1536x1536 (medium 2x)'
+effects:
+  ccdcf84c-7900-45e5-a004-ea39997a74c9:
+    uuid: ccdcf84c-7900-45e5-a004-ea39997a74c9
+    id: image_scale
+    weight: 1
+    data:
+      width: 1536
+      height: 1536
+      upscale: false

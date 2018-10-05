@@ -1,0 +1,14 @@
+uuid: d31972df-318c-47b9-8a5d-26b5c1ea4760
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.layout.field_modifiers
+    - paragraphs.paragraphs_type.layout
+id: paragraph.layout.default
+targetEntityType: paragraph
+bundle: layout
+mode: default
+content: {  }
+hidden:
+  field_modifiers: true

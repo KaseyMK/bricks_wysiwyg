@@ -1,0 +1,20 @@
+uuid: 1e44e41d-5ca8-4f84-afd8-5389105ed60e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bricks_wysiwyg
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: bricks_wysiwyg_local_actions
+theme: bricks_wysiwyg
+region: navigation
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

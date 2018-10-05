@@ -1,0 +1,28 @@
+uuid: 32520fca-8f26-4826-b26a-6a04f21f6aa2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_aaa_media_fake_field
+    - media.type.image
+    - paragraphs.paragraphs_type.image
+id: paragraph.image.field_aaa_media_fake_field
+field_name: field_aaa_media_fake_field
+entity_type: paragraph
+bundle: image
+label: 'AAA media fake field'
+description: 'There appears to be a bug in bricks, parapgraphs, entity embed... or something. This field is required so that the other media field on this paragraph will display properly. It can be disabled in both the form displays and the view modes. https://www.drupal.org/project/bricks/issues/2965994'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

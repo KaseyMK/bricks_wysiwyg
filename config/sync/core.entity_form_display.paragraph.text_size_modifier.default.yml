@@ -1,0 +1,47 @@
+uuid: 4ad4d6a3-e095-4a6d-af09-2d1d987a7ad8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_size_modifier.field_mod_screen_width
+    - field.field.paragraph.text_size_modifier.field_mod_text_size
+    - paragraphs.paragraphs_type.text_size_modifier
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_screen_width:
+      children:
+        - field_mod_screen_width
+      parent_name: ''
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Screen width'
+id: paragraph.text_size_modifier.default
+targetEntityType: paragraph
+bundle: text_size_modifier
+mode: default
+content:
+  field_mod_screen_width:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mod_text_size:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  moderation_state: true
+  status: true
+  uid: true

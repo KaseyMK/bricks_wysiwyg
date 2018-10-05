@@ -1,0 +1,32 @@
+uuid: 6050f957-392b-485e-8f77-dc6debd3a604
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_size_modifier.field_mod_screen_width
+    - field.field.paragraph.text_size_modifier.field_mod_text_size
+    - paragraphs.paragraphs_type.text_size_modifier
+  module:
+    - options
+id: paragraph.text_size_modifier.default
+targetEntityType: paragraph
+bundle: text_size_modifier
+mode: default
+content:
+  field_mod_screen_width:
+    weight: 1
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_mod_text_size:
+    weight: 0
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  created: true
+  uid: true

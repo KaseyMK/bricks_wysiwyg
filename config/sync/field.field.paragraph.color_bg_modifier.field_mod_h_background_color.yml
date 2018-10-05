@@ -1,0 +1,28 @@
+uuid: 201a50bb-c4cc-4ea2-87c6-1a1c78c1262e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mod_h_background_color
+    - paragraphs.paragraphs_type.color_bg_modifier
+    - taxonomy.vocabulary.modifiers_color
+id: paragraph.color_bg_modifier.field_mod_h_background_color
+field_name: field_mod_h_background_color
+entity_type: paragraph
+bundle: color_bg_modifier
+label: 'Hover background color'
+description: 'Select the background hover color. Text color and padding will be calculated automatically.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      modifiers_color: modifiers_color
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

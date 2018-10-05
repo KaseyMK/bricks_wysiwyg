@@ -1,0 +1,10 @@
+uuid: 10962aaa-0f70-43bf-a780-8bdc0f40eff7
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.vw66
+label: 66vw
+targetEntityType: media
+cache: true

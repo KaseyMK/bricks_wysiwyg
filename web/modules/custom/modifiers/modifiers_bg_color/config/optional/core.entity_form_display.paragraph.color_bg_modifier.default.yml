@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.color_bg_modifier.field_mod_background_color
+    - field.field.paragraph.color_bg_modifier.field_mod_h_background_color
+    - field.field.paragraph.color_bg_modifier.field_mod_screen_width
+    - field.field.paragraph.color_bg_modifier.field_mod_transition_duration
+    - paragraphs.paragraphs_type.color_bg_modifier
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+id: paragraph.color_bg_modifier.default
+targetEntityType: paragraph
+bundle: color_bg_modifier
+mode: default
+content:
+  field_mod_background_color:
+    weight: 0
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: color
+      label_plural: colors
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_new: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: browse_colors_modal
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  created: true
+  field_mod_h_background_color: true
+  field_mod_screen_width: true
+  field_mod_transition_duration: true
+  moderation_state: true
+  status: true
+  uid: true
+

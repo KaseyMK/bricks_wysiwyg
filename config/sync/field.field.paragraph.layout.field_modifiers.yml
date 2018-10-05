@@ -1,0 +1,68 @@
+uuid: 06467e4b-2b7e-402f-855f-33802425fb96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_modifiers
+    - paragraphs.paragraphs_type.color_bg_modifier
+    - paragraphs.paragraphs_type.color_text_modifier
+    - paragraphs.paragraphs_type.image_bg_text_modifier
+    - paragraphs.paragraphs_type.image_effects_modifier
+    - paragraphs.paragraphs_type.layout
+    - paragraphs.paragraphs_type.parallax_bg_text_modifier
+    - paragraphs.paragraphs_type.text_size_modifier
+  module:
+    - bricks_revisions
+id: paragraph.layout.field_modifiers
+field_name: field_modifiers
+entity_type: paragraph
+bundle: layout
+label: Modifiers
+description: 'Some modifier combinations will conflict; choose only <em>one</em> from text and background color options.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: '0'
+    target_bundles:
+      color_bg_modifier: color_bg_modifier
+      image_bg_text_modifier: image_bg_text_modifier
+      parallax_bg_text_modifier: parallax_bg_text_modifier
+      image_effects_modifier: image_effects_modifier
+      color_text_modifier: color_text_modifier
+      text_size_modifier: text_size_modifier
+    target_bundles_drag_drop:
+      color_bg_modifier:
+        enabled: '1'
+        weight: '-25'
+      image_bg_text_modifier:
+        enabled: '1'
+        weight: '-24'
+      parallax_bg_text_modifier:
+        enabled: '1'
+        weight: '-23'
+      image_effects_modifier:
+        enabled: '1'
+        weight: '-22'
+      color_text_modifier:
+        enabled: '1'
+        weight: '-21'
+      text_size_modifier:
+        enabled: '1'
+        weight: '-20'
+      image:
+        weight: '-18'
+        enabled: 0
+      layout:
+        weight: '-16'
+        enabled: 0
+      text:
+        weight: '-15'
+        enabled: 0
+      video:
+        weight: '-14'
+        enabled: 0
+field_type: bricks_revisioned

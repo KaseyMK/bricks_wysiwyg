@@ -1,0 +1,20 @@
+uuid: 2e104f04-4d55-4be5-a154-99f59da64318
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bricks_wysiwyg
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: bricks_wysiwyg_page_title
+theme: bricks_wysiwyg
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

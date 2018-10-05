@@ -1,0 +1,23 @@
+uuid: d79d7fae-c6c8-48bd-89be-82652256650c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mod_image_fx_brightness
+    - paragraphs.paragraphs_type.image_effects_modifier
+id: paragraph.image_effects_modifier.field_mod_image_fx_brightness
+field_name: field_mod_image_fx_brightness
+entity_type: paragraph
+bundle: image_effects_modifier
+label: Brightness
+description: 'Define the amount of brightness effect: 0 (black) - 100 (unchanged) - 1000 (bright).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 1000
+  prefix: ''
+  suffix: '%'
+field_type: decimal

@@ -1,0 +1,68 @@
+uuid: 6cbd2777-37d2-4284-8b43-0e3003e7565a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_modifiers
+    - paragraphs.paragraphs_type.color_bg_modifier
+    - paragraphs.paragraphs_type.color_text_modifier
+    - paragraphs.paragraphs_type.text_size_modifier
+    - paragraphs.paragraphs_type.video
+  module:
+    - bricks_revisions
+id: paragraph.video.field_modifiers
+field_name: field_modifiers
+entity_type: paragraph
+bundle: video
+label: Modifiers
+description: 'Some modifier combinations will conflict; choose only <em>one</em> from text and background color options.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: '0'
+    target_bundles:
+      color_bg_modifier: color_bg_modifier
+      color_text_modifier: color_text_modifier
+      text_size_modifier: text_size_modifier
+    target_bundles_drag_drop:
+      color_bg_modifier:
+        enabled: '1'
+        weight: '-25'
+      color_text_modifier:
+        enabled: '1'
+        weight: '-24'
+      text_size_modifier:
+        enabled: '1'
+        weight: '-23'
+      feed:
+        weight: '-22'
+        enabled: 0
+      image:
+        weight: '-21'
+        enabled: 0
+      image_bg_text_modifier:
+        weight: '-20'
+        enabled: 0
+      image_effects_modifier:
+        weight: '-19'
+        enabled: 0
+      image_title:
+        weight: '-18'
+        enabled: 0
+      layout:
+        weight: '-17'
+        enabled: 0
+      parallax_bg_text_modifier:
+        weight: '-16'
+        enabled: 0
+      text:
+        weight: '-15'
+        enabled: 0
+      video:
+        weight: '-14'
+        enabled: 0
+field_type: bricks_revisioned

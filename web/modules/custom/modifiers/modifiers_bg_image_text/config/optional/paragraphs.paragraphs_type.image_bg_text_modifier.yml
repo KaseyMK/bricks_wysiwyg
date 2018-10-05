@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: image_bg_text_modifier
+label: 'Background image'
+icon_uuid: null
+description: 'Modify the background image of a paragraph. Text color and padding will be calculated automatically.'
+behavior_plugins: {  }

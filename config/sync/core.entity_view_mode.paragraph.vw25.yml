@@ -1,0 +1,10 @@
+uuid: a16d2619-454d-4428-b81a-d9b5b1bfab6a
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.vw25
+label: 25%
+targetEntityType: paragraph
+cache: true

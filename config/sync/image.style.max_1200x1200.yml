@@ -1,0 +1,15 @@
+uuid: 98200232-8954-43e7-a206-8afbdf813308
+langcode: en
+status: true
+dependencies: {  }
+name: max_1200x1200
+label: 'Max 1200x1200 (extra large 1x, small 2x)'
+effects:
+  39c7c16d-7a1f-4039-b09e-f52a42202c6d:
+    uuid: 39c7c16d-7a1f-4039-b09e-f52a42202c6d
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: 1200
+      upscale: false

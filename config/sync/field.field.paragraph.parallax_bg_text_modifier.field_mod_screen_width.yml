@@ -1,0 +1,21 @@
+uuid: b67c81a3-fc9b-44ee-a507-ca840c52240b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mod_screen_width
+    - paragraphs.paragraphs_type.parallax_bg_text_modifier
+  module:
+    - options
+id: paragraph.parallax_bg_text_modifier.field_mod_screen_width
+field_name: field_mod_screen_width
+entity_type: paragraph
+bundle: parallax_bg_text_modifier
+label: 'Screen width'
+description: 'Select the screen width at which this modifier should take effect. <br>An "em" is a relative unit based on our font size which is good for accessibility. The given pixel size is accurate if the user has not zoomed in or out, changing the font size they see.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

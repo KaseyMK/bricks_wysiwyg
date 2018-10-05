@@ -1,0 +1,15 @@
+uuid: 89f23d0b-e0d8-4c32-85e3-eec2e0fa2223
+langcode: en
+status: true
+dependencies: {  }
+name: max_2880x2880
+label: 'Max 2880x2880 (max 2x)'
+effects:
+  7dd0ce54-e57d-453b-ba57-f223c215383b:
+    uuid: 7dd0ce54-e57d-453b-ba57-f223c215383b
+    id: image_scale
+    weight: 1
+    data:
+      width: 2880
+      height: 2880
+      upscale: false

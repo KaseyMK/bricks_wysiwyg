@@ -1,0 +1,21 @@
+uuid: 1e603031-87a1-4491-a586-3651132dcf84
+langcode: en
+status: true
+dependencies:
+  module:
+    - bricks_revisions
+    - node
+    - paragraphs
+id: node.field_bricks_before
+field_name: field_bricks_before
+entity_type: node
+type: bricks_revisioned
+settings:
+  target_type: paragraph
+module: bricks_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

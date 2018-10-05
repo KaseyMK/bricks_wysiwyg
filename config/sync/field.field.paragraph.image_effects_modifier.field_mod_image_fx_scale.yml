@@ -1,0 +1,23 @@
+uuid: 28730f0e-39a4-40a9-a1a5-94b2f1a09df2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mod_image_fx_scale
+    - paragraphs.paragraphs_type.image_effects_modifier
+id: paragraph.image_effects_modifier.field_mod_image_fx_scale
+field_name: field_mod_image_fx_scale
+entity_type: paragraph
+bundle: image_effects_modifier
+label: Scale
+description: 'Define the amount to scale: 0 (small) - 1 (unchanged) - 10 (large).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 10
+  prefix: ''
+  suffix: ''
+field_type: decimal

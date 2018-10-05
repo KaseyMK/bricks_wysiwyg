@@ -1,0 +1,21 @@
+uuid: 9f5319a2-8e7f-40ba-9160-250e235b9f29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mod_screen_width
+    - paragraphs.paragraphs_type.color_bg_modifier
+  module:
+    - options
+id: paragraph.color_bg_modifier.field_mod_screen_width
+field_name: field_mod_screen_width
+entity_type: paragraph
+bundle: color_bg_modifier
+label: 'Screen width'
+description: 'If you need different versions of this modifier for different screen sizes, start with one that does not set a screen width. <a href="https://chrome.google.com/webstore/detail/browser-width/mlnegepkjlccabakompdmbcmdieaideh/related" target="_blank" title="This link to a chrome extension for setting/measuring browser width will open in a new window.">Make your browser window narrow (start at 320px wide)</a> and gradually make it wider. When it "breaks," take note of the width where that happened, and add a new version of this modifier with a width just under that. Repeat as needed. Modifiers with screen widths must be sorted from smallest to largest.<br><br>An "em" is a relative unit based on our font size which is good for accessibility. The given pixel size is accurate if the user has not zoomed in or out, changing the font size they see.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

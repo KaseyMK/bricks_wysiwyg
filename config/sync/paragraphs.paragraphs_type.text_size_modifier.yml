@@ -1,0 +1,9 @@
+uuid: bb056fc7-6cd0-464f-aba4-d40690debaac
+langcode: en
+status: true
+dependencies: {  }
+id: text_size_modifier
+label: 'Text size'
+icon_uuid: null
+description: 'Modify the text size for a paragraph.'
+behavior_plugins: {  }

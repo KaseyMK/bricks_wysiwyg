@@ -1,0 +1,33 @@
+uuid: 13a67487-46a2-4223-9eed-2344f8b07f03
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.body
+    - field.field.node.page.body
+    - field.field.node.page.field_bricks_after
+    - field.field.node.page.field_bricks_before
+    - field.field.node.page.field_bricks_sidebar
+    - node.type.page
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.body
+targetEntityType: node
+bundle: page
+mode: body
+content:
+  body:
+    type: text_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_bricks_after: true
+  field_bricks_before: true
+  field_bricks_sidebar: true
+  links: true

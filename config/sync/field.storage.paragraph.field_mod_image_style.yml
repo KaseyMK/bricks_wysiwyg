@@ -1,0 +1,36 @@
+uuid: 308a6707-7276-4b5b-bfa1-19b00bba5a5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_mod_image_style
+field_name: field_mod_image_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: stretch
+      label: 'Stretch to fill'
+    -
+      value: no-repeat
+      label: 'No resizing or tiling'
+    -
+      value: repeat
+      label: 'Tile in both directions'
+    -
+      value: repeat-x
+      label: 'Tile horizontally'
+    -
+      value: repeat-y
+      label: 'Tile vertically'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

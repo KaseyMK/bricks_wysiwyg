@@ -1,0 +1,6 @@
+name: PHP Functions
+description: 'Useful PHP functions that may be called from multiple modules.'
+package: Custom
+type: module
+version: '1.0'
+core: 8.x

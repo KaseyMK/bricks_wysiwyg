@@ -1,0 +1,30 @@
+uuid: ddaca89f-30af-477b-8168-586650cbe992
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.vw66
+    - field.field.media.image.field_media_image
+    - media.type.image
+    - responsive_image.styles.66vw
+  module:
+    - responsive_image
+id: media.image.vw66
+targetEntityType: media
+bundle: image
+mode: vw66
+content:
+  field_media_image:
+    label: hidden
+    settings:
+      responsive_image_style: 66vw
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

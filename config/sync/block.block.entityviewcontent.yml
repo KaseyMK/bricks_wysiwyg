@@ -1,0 +1,23 @@
+uuid: 34219ec1-c5c2-452b-aaa1-5fe8894eaab9
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - bartik
+id: entityviewcontent
+theme: bartik
+region: content
+weight: -2
+provider: null
+plugin: 'entity_view:node'
+settings:
+  id: 'entity_view:node'
+  label: 'Entity view (Content)'
+  provider: ctools
+  label_display: '0'
+  view_mode: body
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility: {  }

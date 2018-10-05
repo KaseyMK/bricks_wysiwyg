@@ -1,0 +1,71 @@
+<?php
+
+/**
+ * @file
+ * Module file for php_functions.
+ */
+
+/**
+ * Calculate the luminosity of a given rgba string and return it.
+ */
+function luminosity_rgba($rgba) {
+  if (stripos($rgba, 'rgba') !== false) {
+    $res = sscanf($rgba, "rgba(%d, %d, %d, %f)");
+  }
+  else {
+    $res = sscanf($rgba, "rgb(%d, %d, %d)");
+    $res[] = 1;
+  }
+  $r = $res[0]/255;
+  $g = $res[1]/255;
+  $b = $res[2]/255;
+  if ($r <= 0.03928) {
+      $r = $r / 12.92;
+  } else {
+      $r = pow((($r + 0.055) / 1.055), 2.4);
+  }
+  if ($g <= 0.03928) {
+      $g = $g / 12.92;
+  } else {
+      $g = pow((($g + 0.055) / 1.055), 2.4);
+  }
+  if ($b <= 0.03928) {
+      $b = $b / 12.92;
+  } else {
+      $b = pow((($b + 0.055) / 1.055), 2.4);
+  }
+  $luminosity = 0.2126 * $r + 0.7152 * $g + 0.0722 * $b;
+  return $luminosity;
+}
+
+/**
+ * Calculate the contrast ratio between black or white and a given rgba string.
+ * Return the contrast ratio of the higher contrast (against black or white).
+ */
+function bw_contrast_ratio_rgba($rgba) {
+  $luminosity = luminosity_rgba($rgba);
+  $ratioBlack = round((($luminosity + 0.05) / (0.05)), 2);
+  $ratioWhite = round(((1.05) / ($luminosity + 0.05)), 2);
+  if ($ratioBlack > $ratioWhite) {
+    return $ratioBlack;
+  }
+  else {
+    return $ratioWhite;
+  }
+}
+
+/**
+ * Calculate the contrast ratio between black or white and a given rgba string.
+ * Return the color name (black or white) of the higher contrast.
+ */
+function bw_contrast_rgba($rgba) {
+  $luminosity = luminosity_rgba($rgba);
+  $ratioBlack = round((($luminosity + 0.05) / (0.05)), 2);
+  $ratioWhite = round(((1.05) / ($luminosity + 0.05)), 2);
+  if ($ratioBlack > $ratioWhite) {
+    return 'black';
+  }
+  else {
+    return 'white';
+  }
+}

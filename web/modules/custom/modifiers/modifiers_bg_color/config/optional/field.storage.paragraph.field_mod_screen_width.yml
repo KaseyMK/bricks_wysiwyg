@@ -1,0 +1,74 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_mod_screen_width
+field_name: field_mod_screen_width
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '(min-width: 20em)'
+      label: 20em (320px) and up
+    -
+      value: '(min-width: 25em)'
+      label: 25em (400px) and up
+    -
+      value: '(min-width: 30em)'
+      label: 30em (480px) and up
+    -
+      value: '(min-width: 35em)'
+      label: 35em (560px) and up
+    -
+      value: '(min-width: 36em)'
+      label: 36em (576px) and up
+    -
+      value: '(min-width: 40em)'
+      label: 40em (640px) and up
+    -
+      value: '(min-width: 45em)'
+      label: 45em (720px) and up
+    -
+      value: '(min-width: 48em)'
+      label: 48em (768px) and up
+    -
+      value: '(min-width: 50em)'
+      label: 50em (800px) and up
+    -
+      value: '(min-width: 55em)'
+      label: 55em (880px) and up
+    -
+      value: '(min-width: 60em)'
+      label: 60em (960px) and up
+    -
+      value: '(min-width: 62em)'
+      label: 62em (992px) and up
+    -
+      value: '(min-width: 65em)'
+      label: 65em (1040px) and up
+    -
+      value: '(min-width: 70em)'
+      label: 70em (1120px) and up
+    -
+      value: '(min-width: 75em)'
+      label: 75em (1200px) and up
+    -
+      value: '(min-width: 80em)'
+      label: 80em (1280px) and up
+    -
+      value: '(min-width: 85em)'
+      label: 85em (1360px) and up
+    -
+      value: '(min-width: 90em)'
+      label: 90em (1440px) and up
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

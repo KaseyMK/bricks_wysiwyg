@@ -1,0 +1,15 @@
+uuid: 6d2ea146-4961-4bca-a5ac-f8b798bdfe23
+langcode: en
+status: true
+dependencies: {  }
+name: max_2400x2400
+label: 'Max 2400x2400 (extra large 2x)'
+effects:
+  dc0cd708-da54-4f14-9343-42fa962a453b:
+    uuid: dc0cd708-da54-4f14-9343-42fa962a453b
+    id: image_scale
+    weight: 1
+    data:
+      width: 2400
+      height: 2400
+      upscale: false

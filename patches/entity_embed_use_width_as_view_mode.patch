@@ -1,0 +1,16 @@
+diff --git a/src/EntityEmbedBuilder.php b/src/EntityEmbedBuilder.php
+index 24e716a..23699ec 100644
+--- a/src/EntityEmbedBuilder.php
++++ b/src/EntityEmbedBuilder.php
+@@ -44,6 +44,11 @@ class EntityEmbedBuilder implements EntityEmbedBuilderInterface {
+    * {@inheritdoc}
+    */
+   public function buildEntityEmbed(EntityInterface $entity, array $context = []) {
++    // UUA-specific override to use the width filter to set the paragraph display mode.
++    if (isset($context['data-width'])) {
++      $context['data-entity-embed-display'] = 'view_mode:paragraph.vw' . $context['data-width'];
++    }
++
+     // Support the deprecated view-mode data attribute.
+     if (isset($context['data-view-mode']) && !isset($context['data-entity-embed-display']) && !isset($context['data-entity-embed-display-settings'])) {
+       $context['data-entity-embed-display'] = 'entity_reference:entity_reference_entity_view';

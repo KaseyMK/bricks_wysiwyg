@@ -1,0 +1,10 @@
+uuid: b9175537-911a-430d-93f2-c512c452b34d
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.sidebar
+label: Sidebar
+targetEntityType: paragraph
+cache: true

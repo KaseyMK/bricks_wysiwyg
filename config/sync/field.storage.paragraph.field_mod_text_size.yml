@@ -1,0 +1,66 @@
+uuid: d046dcc0-986c-4a99-a190-52fd1c7d12d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_mod_text_size
+field_name: field_mod_text_size
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 0.75rem
+      label: '75% (12px)'
+    -
+      value: 0.875rem
+      label: '87.5% (14px)'
+    -
+      value: 1rem
+      label: '100% (16px)'
+    -
+      value: 1.125rem
+      label: '112.5% (18px)'
+    -
+      value: 1.25rem
+      label: '125% (20px)'
+    -
+      value: 1.375rem
+      label: '137.5% (22px)'
+    -
+      value: 1.5rem
+      label: '150% (24px)'
+    -
+      value: 1.625rem
+      label: '162.5% (26px)'
+    -
+      value: 1.75rem
+      label: '175% (28px)'
+    -
+      value: 1.875rem
+      label: '187.5% (30px)'
+    -
+      value: 2rem
+      label: '200% (32px)'
+    -
+      value: 2.125rem
+      label: '212.5% (34px)'
+    -
+      value: 2.25rem
+      label: '225% (36px)'
+    -
+      value: 2.375rem
+      label: '237.5% (38px)'
+    -
+      value: 2.5rem
+      label: '250% (40px)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,28 @@
+uuid: e704d7ff-32cb-4b3f-a3b7-56dabcab9b8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_aaa_media_fake_field
+    - media.type.video
+    - paragraphs.paragraphs_type.video
+id: paragraph.video.field_aaa_media_fake_field
+field_name: field_aaa_media_fake_field
+entity_type: paragraph
+bundle: video
+label: 'AAA media fake field'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

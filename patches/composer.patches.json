@@ -1,0 +1,13 @@
+{
+  "patches": {
+    "drupal/entity_embed": {
+      "Applying styling/positioning classes to embedded entities - https://www.drupal.org/project/entity_embed/issues/2828571": "https://www.drupal.org/files/issues/2018-07-17/styling_classes_embedded_entities-2828571-3.patch",
+      "Replaces any embedded paragraph view mode with one constructed from the selected width filter; requires paragraph view modes vw25, vw33, vw50, and vw66 and corresponding CSS - https://www.drupal.org/project/entity_embed/issues/2828571#comment-12699313": "https://raw.githubusercontent.com/KaseyMK/bricks-wysiwyg/master/patches/entity_embed_use_width_as_view_mode.patch",
+      "Right click option to edit entity: not reference a different entity, but *edit* the entity in a dialog - https://www.drupal.org/project/entity_embed/issues/2513086": "https://www.drupal.org/files/issues/entity_embed-2513086-edit-entity-18.patch"
+    },
+    "drupal/paragraphs": {
+      "Allow paragraph type deletion if content exists - https://www.drupal.org/project/paragraphs/issues/2764681": "https://www.drupal.org/files/issues/2018-05-31/allow_paragraphs_deletion-2764681-88.patch",
+      "Integrity constraint violation: 1048 Column 'langcode' cannot be null - https://www.drupal.org/project/paragraphs/issues/2901390": "https://www.drupal.org/files/issues/paragraphs-missing-langcode-2901390-9.patch"
+    }
+  }
+}

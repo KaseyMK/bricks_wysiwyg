@@ -1,0 +1,27 @@
+uuid: a4aa6568-dd31-4ce1-9877-ca37d294cf19
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.max_320x320
+    - image.style.max_576x576
+    - image.style.max_640x640
+    - image.style.max_768x768
+    - image.style.max_992x992
+id: 33vw
+label: 33vw
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width:20em) 33.33vw, 100vw'
+      sizes_image_styles:
+        - max_320x320
+        - max_576x576
+        - max_640x640
+        - max_768x768
+        - max_992x992
+breakpoint_group: responsive_image
+fallback_image_style: max_320x320

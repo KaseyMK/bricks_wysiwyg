@@ -1,0 +1,44 @@
+.cke_editable img {
+  max-width: 100%;
+  height: initial;
+}
+.width-25 {
+  width: 25%;
+}
+.width-33 {
+  width: 33.33%;
+}
+.width-50 {
+  width: 50%;
+}
+.width-66 {
+  width: 66.66%;
+}
+.width-100 {
+  width: 100%;
+}
+.align-left.width-25,
+.align-left.width-33,
+.align-left.width-50,
+.align-left.width-66 {
+  padding-right: 1em;
+}
+.align-right.width-25,
+.align-right.width-33,
+.align-right.width-50,
+.align-right.width-66 {
+  padding-left: 1em;
+}
+.field--name-field-media-oembed-video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 0;
+  height: 0;
+}
+.field--name-field-media-oembed-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

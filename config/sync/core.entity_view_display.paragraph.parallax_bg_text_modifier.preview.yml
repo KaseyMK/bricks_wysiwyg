@@ -1,0 +1,105 @@
+uuid: 77abc8e7-85aa-49cb-bca0-bdd5e2d764ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_black_white
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_height
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_height_units
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_horizontal_align
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_parallax
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_parallax_speed
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_screen_width
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_text_width
+    - field.field.paragraph.parallax_bg_text_modifier.field_mod_vertical_align
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.parallax_bg_text_modifier
+  module:
+    - media
+    - options
+id: paragraph.parallax_bg_text_modifier.preview
+targetEntityType: paragraph
+bundle: parallax_bg_text_modifier
+mode: preview
+content:
+  field_mod_black_white:
+    weight: 3
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_mod_height:
+    weight: 6
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_mod_height_units:
+    weight: 7
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_mod_horizontal_align:
+    weight: 5
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_mod_parallax:
+    type: media_thumbnail
+    weight: 0
+    label: inline
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_mod_parallax_speed:
+    type: number_decimal
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_mod_screen_width:
+    weight: 9
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_mod_text_width:
+    type: number_decimal
+    weight: 4
+    region: content
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_mod_vertical_align:
+    weight: 8
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  created: true
+  uid: true

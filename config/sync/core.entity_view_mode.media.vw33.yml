@@ -1,0 +1,10 @@
+uuid: b14161e0-ab9c-4edc-ad45-607ddbd78344
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.vw33
+label: 33vw
+targetEntityType: media
+cache: true

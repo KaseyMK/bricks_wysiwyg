@@ -1,0 +1,29 @@
+uuid: 3ac93eb7-5e56-44c8-b0a3-d0c34961be57
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools_block
+  theme:
+    - bricks_wysiwyg
+id: heroarea
+theme: bricks_wysiwyg
+region: header
+weight: -3
+provider: null
+plugin: 'entity_field:node:field_bricks_hero'
+settings:
+  id: 'entity_field:node:field_bricks_hero'
+  label: 'Hero area'
+  provider: ctools_block
+  label_display: '0'
+  formatter:
+    label: hidden
+    type: bricks_nested
+    settings:
+      view_mode: default
+    third_party_settings: {  }
+    weight: 0
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility: {  }

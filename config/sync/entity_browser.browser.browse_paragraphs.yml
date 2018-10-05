@@ -1,0 +1,55 @@
+uuid: 99b2e1bd-fa03-40c4-9fb0-47ed04fd7ff5
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_browser_entity_form
+name: browse_paragraphs
+label: 'Browse paragraphs'
+display: iframe
+display_configuration:
+  width: 100%
+  height: '1000'
+  link_text: 'Select entities'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration:
+  entity_type: paragraph
+  display: rendered_entity
+  display_settings:
+    view_mode: preview
+  select_text: 'Use selected'
+  selection_hidden: false
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  6208b320-8359-4e20-a4ce-3fdb99ed37c3:
+    settings:
+      entity_type: paragraph
+      bundle: image
+      form_mode: default
+      submit_text: Next
+    uuid: 6208b320-8359-4e20-a4ce-3fdb99ed37c3
+    weight: 1
+    label: Image
+    id: entity_form
+  3508df5c-9d46-4ad7-b0bb-423ccf174ede:
+    settings:
+      entity_type: paragraph
+      bundle: video
+      form_mode: default
+      submit_text: Next
+    uuid: 3508df5c-9d46-4ad7-b0bb-423ccf174ede
+    weight: 3
+    label: Video
+    id: entity_form
+  27cc9486-9cf5-4490-98d3-6a196cc73ee5:
+    settings:
+      entity_type: paragraph
+      bundle: aside
+      form_mode: default
+      submit_text: Next
+    uuid: 27cc9486-9cf5-4490-98d3-6a196cc73ee5
+    weight: 3
+    label: Aside
+    id: entity_form

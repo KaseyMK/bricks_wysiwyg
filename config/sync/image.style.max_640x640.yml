@@ -1,0 +1,15 @@
+uuid: c634c66c-a9c7-48c5-8995-d22e380645bb
+langcode: en
+status: true
+dependencies: {  }
+name: max_640x640
+label: 'Max 640x640 (extra small 2x)'
+effects:
+  92d51f12-2204-4109-9196-357ea5d4a4a5:
+    uuid: 92d51f12-2204-4109-9196-357ea5d4a4a5
+    id: image_scale
+    weight: 1
+    data:
+      width: 640
+      height: 640
+      upscale: false

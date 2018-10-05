@@ -1,0 +1,31 @@
+uuid: 73474dc9-a493-4601-b603-863bde17e3ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.max_1200x1200
+    - image.style.max_1536x1536
+    - image.style.max_320x320
+    - image.style.max_576x576
+    - image.style.max_640x640
+    - image.style.max_768x768
+    - image.style.max_992x992
+id: 50vw
+label: 50vw
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width:20em) 50vw, 100vw'
+      sizes_image_styles:
+        - max_1200x1200
+        - max_1536x1536
+        - max_320x320
+        - max_576x576
+        - max_640x640
+        - max_768x768
+        - max_992x992
+breakpoint_group: responsive_image
+fallback_image_style: max_320x320

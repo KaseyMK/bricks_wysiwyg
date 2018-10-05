@@ -1,0 +1,23 @@
+uuid: 1aa65832-922c-41c5-8a28-6f6f48d9a376
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mod_transition_duration
+    - paragraphs.paragraphs_type.color_bg_modifier
+id: paragraph.color_bg_modifier.field_mod_transition_duration
+field_name: field_mod_transition_duration
+entity_type: paragraph
+bundle: color_bg_modifier
+label: 'Transition duration'
+description: 'Specify the hover/no-hover transition duration in seconds (0.3 is standard).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: s
+field_type: decimal

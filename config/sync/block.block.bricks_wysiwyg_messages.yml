@@ -1,0 +1,22 @@
+uuid: 2533830b-7537-40d7-931b-9d2b000b9002
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bricks_wysiwyg
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: bricks_wysiwyg_messages
+theme: bricks_wysiwyg
+region: header
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

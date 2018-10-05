@@ -1,0 +1,30 @@
+uuid: 8eb79e19-da57-4bd3-8304-4e0b5a147276
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.max_1200x1200
+    - image.style.max_320x320
+    - image.style.max_325x325
+    - image.style.max_576x576
+    - image.style.max_640x640
+    - image.style.max_768x768
+    - image.style.max_992x992
+id: narrow
+label: Narrow
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - max_1200x1200
+        - max_320x320
+        - max_576x576
+        - max_640x640
+        - max_768x768
+        - max_992x992
+breakpoint_group: responsive_image
+fallback_image_style: max_325x325

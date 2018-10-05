@@ -1,0 +1,14 @@
+uuid: c73277a4-7eb8-4be3-b05b-b30d538297cd
+name: 'Bricks & WYSIWYG Paragraphs'
+mail: kasey.kruser@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

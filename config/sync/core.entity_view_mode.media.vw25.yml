@@ -1,0 +1,10 @@
+uuid: 7c98ba7b-4f37-4cff-84ab-4a25dacc9270
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.vw25
+label: 25vw
+targetEntityType: media
+cache: true

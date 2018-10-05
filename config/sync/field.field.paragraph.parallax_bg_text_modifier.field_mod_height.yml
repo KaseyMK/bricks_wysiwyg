@@ -1,0 +1,23 @@
+uuid: 009ad06d-ee9b-4ebe-919e-04b7a9bc8b30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mod_height
+    - paragraphs.paragraphs_type.parallax_bg_text_modifier
+id: paragraph.parallax_bg_text_modifier.field_mod_height
+field_name: field_mod_height
+entity_type: paragraph
+bundle: parallax_bg_text_modifier
+label: 'Minimum height'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,21 @@
+uuid: c5eef914-7b12-424d-ab3a-fe2840c00101
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mod_vertical_align
+    - paragraphs.paragraphs_type.image_bg_text_modifier
+  module:
+    - options
+id: paragraph.image_bg_text_modifier.field_mod_vertical_align
+field_name: field_mod_vertical_align
+entity_type: paragraph
+bundle: image_bg_text_modifier
+label: 'Vertical alignment'
+description: 'Vertically align the text overlay in relation to the background image.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

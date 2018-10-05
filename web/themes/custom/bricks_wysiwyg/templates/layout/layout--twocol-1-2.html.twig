@@ -1,0 +1,37 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a two-column 1:2 layout.
+ *
+ * Bootstrap classes provide two columns at b400 with a 1:2 width ratio.
+ * https://getbootstrap.com/docs/4.0/layout/grid/
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'row',
+  ]
+%}
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+
+    {% if content.first %}
+      <div {{ region_attributes.first.addClass('col-xs-6 col-sm-4') }}>
+        {{ content.first }}
+      </div>
+    {% endif %}
+
+    {% if content.second %}
+      <div {{ region_attributes.second.addClass('col-xs-6 col-sm-8') }}>
+        {{ content.second }}
+      </div>
+    {% endif %}
+
+  </div>
+{% endif %}

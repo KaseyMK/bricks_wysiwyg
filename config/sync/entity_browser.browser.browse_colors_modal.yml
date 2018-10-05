@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.color_taxonomy
+  module:
+    - views
+name: browse_colors_modal
+label: 'Browse colors (modal)'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Choose a color'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  73eee9f5-a970-40a9-8e62-3f4eb802b95b:
+    settings:
+      view: color_taxonomy
+      view_display: color_browser
+      submit_text: Next
+      auto_select: false
+    weight: 1
+    label: choose
+    id: view

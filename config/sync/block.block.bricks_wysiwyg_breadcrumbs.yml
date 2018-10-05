@@ -1,0 +1,22 @@
+uuid: bbe83917-9a8c-4763-953d-f18846f978de
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bricks_wysiwyg
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: bricks_wysiwyg_breadcrumbs
+theme: bricks_wysiwyg
+region: header
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

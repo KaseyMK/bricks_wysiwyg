@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: text_size_modifier
+label: 'Text size'
+icon_uuid: null
+description: 'Modify the text size for the paragraphs nested below.'
+behavior_plugins: {  }

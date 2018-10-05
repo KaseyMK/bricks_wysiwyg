@@ -1,0 +1,25 @@
+uuid: 7685e34d-0eda-4730-a8a0-0839637a0f32
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bricks_wysiwyg
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: bricks_wysiwyg_branding
+theme: bricks_wysiwyg
+region: footer
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

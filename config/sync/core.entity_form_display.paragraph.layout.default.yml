@@ -1,0 +1,35 @@
+uuid: 4dde3b3c-5864-47e9-be1d-99a9c76fb763
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.layout.field_modifiers
+    - paragraphs.paragraphs_type.layout
+  module:
+    - bricks_inline
+id: paragraph.layout.default
+targetEntityType: paragraph
+bundle: layout
+mode: default
+content:
+  field_modifiers:
+    weight: 0
+    settings:
+      form_mode: default
+      override_labels: '1'
+      label_singular: modifier
+      label_plural: modifiers
+      allow_new: '1'
+      match_operator: CONTAINS
+      collapsible: 0
+      collapsed: 0
+      allow_existing: 0
+      allow_duplicate: 0
+    third_party_settings: {  }
+    type: bricks_tree_inline
+    region: content
+hidden:
+  created: true
+  moderation_state: true
+  status: true
+  uid: true
