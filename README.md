@@ -74,6 +74,10 @@ The "Basic page" content type includes brick fields with layout options above an
 
 New paragraph types can be added at `/admin/structure/paragraphs_type`.
 
+To include modifiers, add `field_modifiers` to it and select the appropriate modifiers. Remember to disable its display.
+
+Consider its semantic markup; make a custom twig file if necessary in `web/themes/custom/bricks_wysiwyg/templates/paragraph` (copy from default at `modules/contrib/paragraphs/templates/paragraph.html.twig`)
+
 Enable a new paragraph type in a bricks field by editing that field, e.g. at `/admin/structure/types/manage/page/fields/node.page.field_bricks_before`.
 
 To enable a new paragraph type in the WYSIWYG, you must add it to both the entity embed button and to the entity browser.
