@@ -2,6 +2,22 @@
 
 Bricks, paragraphs, and modifiers allow enormously flexible page layouts that are easy for content providers to build. WYSIWYG paragraphs let authors make dynamic content areas interspersed with media in a structured-data format. The combination gives ultimate flexibility to content providers without ongoing developer maintenance.
 
+This repo will install:
+
+* Drupal 8.6
+* Modules, patches, and libraries (see composer.json and web/modules/custom)
+* A Bootstrap-based theme with layouts, styles, and templates (see web/themes/custom)
+* Config/sync files for:
+  * Paragraph types
+  * Page content type
+  * A color taxonomy and a view to browse it
+  * Entity browsers
+  * Text editor embed button
+  * Text formats and editors
+  * Block layout
+  * Image & responsive image styles
+  * Display modes for media & paragraphs
+
 [Download the PowerPoint](https://github.com/KaseyMK/bricks_wysiwyg/blob/master/data/readme/bricks-wysiwyg.pptx?raw=true) for a walkthrough.
 
 Instructions and additional detail are below the screenshots.
@@ -52,7 +68,7 @@ Sample images are in `data/files`; move those to `web/sites/default/files` or up
 
 ### With a Fresh Database
 
-If you don't use the sample database, enable the following modules one at a time:
+If you don't use the sample database, you may need to disable the following modules and then re-enable them one at a time:
 
 * `modifiers_bg_color`
 * `modifiers_bg_image_text`
