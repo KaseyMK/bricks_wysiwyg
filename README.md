@@ -5,7 +5,7 @@ Bricks, paragraphs, and modifiers allow enormously flexible page layouts that ar
 This repo will install:
 
 * Drupal 8.6
-* Modules, patches, and libraries (see composer.json and web/modules/custom)
+* Modules, patches, and libraries (see composer.json, patches/composer.patches.json, web/libraries, and web/modules/custom)
 * A Bootstrap-based theme with layouts, styles, and templates (see web/themes/custom)
 * Config/sync files for:
   * Paragraph types
