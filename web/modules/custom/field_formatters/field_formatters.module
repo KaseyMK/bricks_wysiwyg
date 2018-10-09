@@ -4,23 +4,3 @@
  * @file
  * Module file for field_formatters.
  */
-
-use Drupal\Component\Utility\SafeMarkup;
-
-/**
- * Implements hook_theme().
- */
-function tweet_theme() {
-  return array(
-    'tweet_formatter' => array(
-      'variables' => array('item' => NULL),
-    ),
-  );
-}
-
-/**
- * Implements template_preprocess_tweet_formatter().
- */
-function template_preprocess_tweet_formatter(&$vars) {
-  $vars['tweetCode'] = SafeMarkup::checkPlain($vars['item']->get('field_text')->getValue());
-}
