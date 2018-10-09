@@ -1,0 +1,22 @@
+uuid: 069a96b5-7d32-4a92-b32a-19a13f166203
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tweet.field_text
+    - paragraphs.paragraphs_type.tweet
+  module:
+    - field_formatters
+id: paragraph.tweet.default
+targetEntityType: paragraph
+bundle: tweet
+mode: default
+content:
+  field_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: tweet
+    region: content
+hidden: {  }

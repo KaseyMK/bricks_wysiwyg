@@ -1,0 +1,28 @@
+uuid: f552e9cf-71dc-484e-bfb5-4c3e1b422bcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.tweet
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+id: paragraph.tweet.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: tweet
+label: 'Tweet embed code'
+description: 'Use the menu in the upper-right of a Tweet and choose "Embed Tweet." Copy that code into this box.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,9 @@
+uuid: 9ae9de96-cd88-454e-ae0b-33a6793b2bb9
+langcode: en
+status: true
+dependencies: {  }
+id: tweet
+label: Tweet
+icon_uuid: null
+description: 'Add an embedded Tweet.'
+behavior_plugins: {  }

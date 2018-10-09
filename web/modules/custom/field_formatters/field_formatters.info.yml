@@ -1,0 +1,6 @@
+name: Field Formatters
+description: "Custom field formatters for things like embedded Tweets."
+package: Custom
+type: module
+version: "1.0"
+core: 8.x

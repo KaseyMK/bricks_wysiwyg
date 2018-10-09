@@ -30,7 +30,7 @@ widgets:
       form_mode: default
       submit_text: Next
     uuid: 6208b320-8359-4e20-a4ce-3fdb99ed37c3
-    weight: 1
+    weight: -10
     label: Image
     id: entity_form
   3508df5c-9d46-4ad7-b0bb-423ccf174ede:
@@ -40,7 +40,7 @@ widgets:
       form_mode: default
       submit_text: Next
     uuid: 3508df5c-9d46-4ad7-b0bb-423ccf174ede
-    weight: 3
+    weight: -7
     label: Video
     id: entity_form
   27cc9486-9cf5-4490-98d3-6a196cc73ee5:
@@ -50,6 +50,16 @@ widgets:
       form_mode: default
       submit_text: Next
     uuid: 27cc9486-9cf5-4490-98d3-6a196cc73ee5
-    weight: 3
+    weight: -9
     label: Aside
+    id: entity_form
+  cb94e464-0361-40d7-baab-edb30e3bbc02:
+    settings:
+      entity_type: paragraph
+      bundle: tweet
+      form_mode: default
+      submit_text: Next
+    uuid: cb94e464-0361-40d7-baab-edb30e3bbc02
+    weight: -8
+    label: Tweet
     id: entity_form

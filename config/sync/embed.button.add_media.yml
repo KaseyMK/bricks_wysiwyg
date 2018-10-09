@@ -5,6 +5,7 @@ dependencies:
   config:
     - paragraphs.paragraphs_type.aside
     - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.tweet
     - paragraphs.paragraphs_type.video
   content:
     - 'file:file:f5e74562-cd27-46ca-a872-103a976e61f9'
@@ -19,6 +20,7 @@ type_settings:
   bundles:
     - aside
     - image
+    - tweet
     - video
   display_plugins:
     - 'view_mode:paragraph.vw100'

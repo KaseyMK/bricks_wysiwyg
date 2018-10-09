@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a formatted Tweet.
+ *
+ * Available variables:
+ * - tweetCode: The sanitized Tweet embed code.
+ *
+ * @see template_preprocess_tweet_formatter()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if tweetCode %}
+  {{ tweetCode }}
+{% endif %}

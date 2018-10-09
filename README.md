@@ -122,6 +122,7 @@ The following contrib or non-standard core modules are enabled for the following
 * `entity_browser` `entity_browser_entity_form`: We can create views to allow a user to select a pre-existing entity (like colors from a vocabulary: `/admin/structure/views/view/color_taxonomy`) and then build entity browsers that let users either select an existing entity or create a new one: `/admin/config/content/entity_browser`
 * `entity_embed`: Allows the creation of custom embed buttons for use in CKEditor, e.g. `/admin/config/content/embed` which uses the browse_paragraphs entity browser.
 * `field_group`: Lets us make nicer, less-confusing forms.
+* `field_formatters`: Includes a formatter for letting users embed Tweets safely.
 * `inline_entity_form`: Allows complex field widgets which can be used to create other entities.
 * `layout_discovery`: Exposes layout files (in the theme folder) to discovery so they're available as selections on the layout paragraph type.
 * `linked_field`: Allows any field to be output as a link using any other link field or token. In this site, an image paragraph with a link field will have that link applied to the image.

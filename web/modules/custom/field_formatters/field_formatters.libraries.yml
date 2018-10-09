@@ -1,0 +1,4 @@
+twitter:
+  version: 1.x
+  js:
+    js/twitter_widgets.js: {}

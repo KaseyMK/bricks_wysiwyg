@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.layout
     - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.tweet
     - paragraphs.paragraphs_type.video
   module:
     - bricks_revisions
@@ -27,41 +28,45 @@ settings:
     negate: '0'
     target_bundles:
       image: image
-      video: video
       text: text
+      tweet: tweet
+      video: video
       layout: layout
     target_bundles_drag_drop:
       image:
+        enabled: '1'
+        weight: '-25'
+      text:
+        enabled: '1'
+        weight: '-24'
+      tweet:
         enabled: '1'
         weight: '-23'
       video:
         enabled: '1'
         weight: '-22'
-      text:
-        enabled: '1'
-        weight: '-21'
       layout:
         enabled: '1'
-        weight: '-20'
+        weight: '-21'
       color_bg_modifier:
-        weight: '-19'
+        weight: '-20'
         enabled: 0
       aside:
-        weight: '-18'
+        weight: '-19'
         enabled: 0
       color_text_modifier:
-        weight: '-17'
+        weight: '-18'
         enabled: 0
       image_bg_text_modifier:
-        weight: '-16'
+        weight: '-17'
         enabled: 0
       image_effects_modifier:
-        weight: '-15'
+        weight: '-16'
         enabled: 0
       parallax_bg_text_modifier:
-        weight: '-14'
+        weight: '-15'
         enabled: 0
       text_size_modifier:
-        weight: '-13'
+        weight: '-14'
         enabled: 0
 field_type: bricks_revisioned
