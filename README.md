@@ -159,8 +159,6 @@ If you don't find the custom patches for the entity_embed module (to add a width
 
 ## Notes
 
-This package requires specific versions of Drupal and all modules so this documentation is sure to be accurate. Update at will.
-
 The [Modifiers Pack module](https://www.drupal.org/project/modifiers_pack) includes a number of different modifiers upon which this site's modifiers are based. There shouldn't be any conflict in using modifiers from both collections, but pay attention to UI differences that might be confusing.
 
 The [Bootstrap Paragraphs module](https://www.drupal.org/project/bootstrap_paragraphs) includes paragraph types which let you easily create features like Accordions, Carousels, Modals, Tabs, and Multi-column layouts. You may need different versions of these paragraph types for use in the WYSIWYG or within your bricks fields, or choose to enable them in only one or the other.
