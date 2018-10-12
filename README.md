@@ -4,7 +4,7 @@ Bricks, paragraphs, and modifiers allow enormously flexible page layouts that ar
 
 This repo will install:
 
-* Drupal 8.6
+* Drupal 8.6.0
 * Modules, patches, and libraries (see composer.json, patches/composer.patches.json, web/libraries, and web/modules/custom)
 * A Bootstrap-based theme with layouts, styles, and templates (see web/themes/custom)
 * Config/sync files for:
@@ -158,6 +158,8 @@ See `patches/composer.patches.json` for more information.
 If you don't find the custom patches for the entity_embed module (to add a width filter and use it to apply a view mode), you'll probably want to enable more view modes on the `add_media` entity embed button at `/admin/config/content/embed/button/manage/add_media` instead.
 
 ## Notes
+
+This package requires specific versions of Drupal and all modules so this documentation is sure to be accurate. Update at will.
 
 The [Modifiers Pack module](https://www.drupal.org/project/modifiers_pack) includes a number of different modifiers upon which this site's modifiers are based. There shouldn't be any conflict in using modifiers from both collections, but pay attention to UI differences that might be confusing.
 
