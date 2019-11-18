@@ -1,3 +1,7 @@
+# UPDATE
+
+Since publishing this, Drupal core's Layout Builder has become viable. Since they have prioritized making that accessible, and since core function can be expected to have better ongoing support and development than contrib modules, we have abandoned bricks in favor of Drupal's layout_builder. The paragraph_blocks module allows the placement of individual paragraphs within a layout, so we can achieve all the same critical functionality - and have an accessible UI.
+
 # Bricks &amp; WYSIWYG Paragraphs for Impressive Pages Without Ongoing Development
 
 Bricks, paragraphs, and modifiers allow enormously flexible page layouts that are easy for content providers to build. WYSIWYG paragraphs let authors make dynamic content areas interspersed with media in a structured-data format. The combination gives ultimate flexibility to content providers without ongoing developer maintenance.
